@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>朗兰兹宇宙 · The Langlands Universe</title>
+<meta name="description" content="一份可交互的朗兰兹纲领（Langlands Program）深度导览：3D 星图、历史时间线、人物档案、核心概念、研究现状与争议。">
+<meta name="theme-color" content="#03050c">
+<meta property="og:title" content="朗兰兹宇宙 · The Langlands Universe">
+<meta property="og:description" content="一个关于数论、表示论与几何的宏大猜想网络。3D 交互式数学宇宙导览。">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://peize-yuan.github.io/langlands-universe/assets/og-cover.png">
+<link rel="canonical" href="https://peize-yuan.github.io/langlands-universe/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#orientation">跳到正文</a>
+
+<div id="boot" aria-hidden="true">
+  <div class="boot-inner">
+    <div class="boot-mark">
+      <span class="orb"></span>
+      <span><b>朗兰兹宇宙</b><small>THE LANGLANDS UNIVERSE / INITIALIZING</small></span>
+    </div>
+    <div class="boot-line"><i></i></div>
+    <div class="boot-meta"><span>CALIBRATING ORBIT</span><span>1967 — NOW</span></div>
+  </div>
+</div>
+
+<div class="cosmos" aria-hidden="true">
+  <canvas id="space"></canvas>
+  <div class="glow-a"></div>
+  <div class="glow-b"></div>
+</div>
+<div class="grid-overlay" aria-hidden="true"></div>
+<div class="scanlines" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<div id="node-layer"></div>
+
+<header class="topbar">
+  <a class="brand" href="#origin" aria-label="回到朗兰兹宇宙首页">
+    <span class="brand-mark"><span>L</span></span>
+    <span class="brand-text"><b>朗兰兹宇宙</b><small>THE LANGLANDS UNIVERSE</small></span>
+  </a>
+  <nav class="topnav" aria-label="主导航">
+    <a href="#orientation">导览</a>
+    <a href="#core">核心</a>
+    <a href="#history">历史</a>
+    <a href="#people">人物</a>
+    <a href="#status">现状</a>
+  </nav>
+  <div class="top-actions">
+    <button class="icon-btn" id="explore-enter" type="button" aria-label="进入自由探索模式" title="自由探索">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M15.8 8.2l-2.2 5.4-5.4 2.2 2.2-5.4z"/></svg>
+    </button>
+    <button class="icon-btn nav-toggle" id="nav-open" type="button" aria-label="打开星图目录" title="星图目录">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<nav class="rail" aria-label="章节轨道">
+  <a href="#origin"><span class="bar"></span><span class="idx">00</span></a>
+  <a href="#orientation"><span class="bar"></span><span class="idx">01</span></a>
+  <a href="#core"><span class="bar"></span><span class="idx">02</span></a>
+  <a href="#history"><span class="bar"></span><span class="idx">03</span></a>
+  <a href="#people"><span class="bar"></span><span class="idx">04</span></a>
+  <a href="#concepts"><span class="bar"></span><span class="idx">05</span></a>
+  <a href="#status"><span class="bar"></span><span class="idx">06</span></a>
+  <a href="#critique"><span class="bar"></span><span class="idx">07</span></a>
+  <a href="#library"><span class="bar"></span><span class="idx">08</span></a>
+</nav>
+
+<div class="hud hud-bottom-left" aria-hidden="true">
+  <span class="live">LIVE</span><span class="sep"></span>
+  <span class="hide-m">SCENE <b id="hud-scene">总览</b></span><span class="sep hide-xs"></span>
+  <span class="hide-xs">RA <b id="hud-coord">05h 35m / −5.0°</b></span><span class="sep hide-xs"></span>
+  <span class="hide-m">ZOOM <b id="hud-zoom">100%</b></span>
+</div>
+<div class="hud hud-bottom-right" aria-hidden="true">
+  <span>MODE <b id="hud-mode">AUTO</b></span><span class="sep"></span>
+  <span>DRAG · ORBIT / SCROLL · READ</span>
+</div>
+
+<main id="main">
+
+  <section class="chapter hero" id="origin" data-scene="galaxy">
+    <div class="hero-inner">
+      <div class="hero-vertical">AN INTERACTIVE ATLAS OF THE LANGLANDS PROGRAM · 1967—NOW</div>
+      <div class="hero-kicker"><span class="line"></span><span>AN INTERACTIVE ATLAS / 交互式星图</span></div>
+      <h1 class="hero-title">
+        <span class="row">朗兰兹</span>
+        <span class="row"><span class="accent">宇宙</span><span class="dot">·</span></span>
+      </h1>
+      <div class="hero-en">THE LANGLANDS UNIVERSE</div>
+      <p class="hero-sub">
+        1967 年，一封写给 André Weil 的信，提出把<strong>伽罗瓦表示</strong>、<strong>自守形式</strong>与 <strong>L-函数</strong>放进同一张星图。
+        半个多世纪后，这封信长成了一个横跨数论、表示论与几何的猜想网络——它尚未完成，却已经改变了现代数学的语言。
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#orientation">进入星图 <span class="arr">↘</span></a>
+        <button class="btn ghost" id="explore-enter-2" type="button">自由探索 <span class="arr">◎</span></button>
+      </div>
+      <p class="hero-tip">悬停星点 · 点击概念档案 · 拖拽空白处旋转</p>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="num">1967</div><div class="cap">起点 / 致 WEIL 的信</div></div>
+        <div class="hero-stat"><div class="num">3</div><div class="cap">语言 / 算术 · 表示 · 几何</div></div>
+        <div class="hero-stat"><div class="num">2024</div><div class="cap">突破 / 几何朗兰兹</div></div>
+        <div class="hero-stat"><div class="num">∞</div><div class="cap">未完成 / 一般函子性</div></div>
+      </div>
+      <div class="scroll-cue"><span class="track"></span><span>SCROLL TO DESCEND</span></div>
+      <div class="hero-side">
+        <div class="rule"></div>
+        <div>OBSERVATORY / IAS</div>
+        <div>40° 41′ N · 74° 02′ W</div>
+        <div><b>ORBIT 00 / 08</b></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter" id="orientation" data-scene="rosetta">
+    <div class="chapter-inner">
+      <div class="chapter-head">
+        <div class="head-left">
+          <span class="ghost-num" aria-hidden="true">01</span>
+          <div class="eyebrow">Orientation / 导览</div>
+          <h2>一张写给<br><span class="thin">未来的</span>数学星图</h2>
+        </div>
+        <div class="head-right">
+          <p>朗兰兹纲领不是一条定理，而是一组彼此咬合的猜想。它的核心动作只有一个：把算术问题翻译成表示论问题，再让 L-函数充当两种语言共同的语法。</p>
+          <div class="meta"><span><b>阅读时间</b> 约 30 分钟</span><span><b>难度</b> 科普 / 进阶</span><span><b>版本</b> 2025</span></div>
+        </div>
+      </div>
+
+      <div class="orient-grid">
+        <div class="orient-copy reveal">
+          <p class="first">想象一座山，有三条登山路。第一条从素数、方程与伽罗瓦群出发；第二条从群表示、谱与自守形式出发；第三条从曲线、向量丛与层出发。过去，它们看起来属于不同的世界。朗兰兹纲领说：山顶是同一个地方。</p>
+          <p>更准确地说，它预测数域的算术数据可以被“表示”为某些无限维表示，而这些表示的 L-函数与原初算术对象的 L-函数完全相同。这个对应一旦成立，一个原本无法下手的计数问题，可能变成一个可以计算的谱问题。</p>
+          <p>这就是为什么它常被比作数学的罗塞塔石碑：不是因为它已经翻译了一切，而是因为它给出了翻译的<strong>方向</strong>。下面三种语言，是进入这张星图最基本的坐标。</p>
+          <div class="lang-stack">
+            <div class="lang-card"><div class="no">A / 01</div><div><h3>算术 · 伽罗瓦</h3><p>研究方程的解与对称性。Galois 群的作用被写成矩阵，Frobenius 元素的特征值编码素数处的局部信息。</p></div></div>
+            <div class="lang-card"><div class="no">B / 02</div><div><h3>表示 · 自守</h3><p>研究群在函数空间上的作用。自守形式是满足对称条件的函数，现代语言把它们打包成 adele 群上的自守表示。</p></div></div>
+            <div class="lang-card"><div class="no">C / 03</div><div><h3>几何 · 层</h3><p>研究曲线上的向量丛与微分方程。几何朗兰兹把“表示”换成“层”，让对应变成范畴之间的等价。</p></div></div>
+          </div>
+        </div>
+        <div class="orient-visual reveal d1">
+          <figure class="plate">
+            <img src="assets/fig-rosetta.svg" alt="三块并置的数学石碑：伽罗瓦轨道、自守谱与曲线上的层" width="1200" height="700">
+            <figcaption><span><b>PLATE 01</b> / THREE LANGUAGES</span><span>三种语言并非严格同构，而是由一组猜想连接的视角。</span></figcaption>
+          </figure>
+          <div class="orient-note">
+            <div><b>不是定理</b><span>“Langlands program” 是一张问题网络，而非单一命题。</span></div>
+            <div><b>而是翻译</b><span>对应、函子性与 L-函数，是三种翻译规则。</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="one-minute reveal">
+        <div class="om-step"><div class="n">STEP 01</div><h4>从一个算术对象开始</h4><p>一条椭圆曲线、一个伽罗瓦表示，或一个数域的扩张。</p></div>
+        <div class="om-step"><div class="n">STEP 02</div><h4>寻找它的“表示”</h4><p>把算术数据变成一个自守表示，或一个 L-参数。</p></div>
+        <div class="om-step"><div class="n">STEP 03</div><h4>对齐 L-函数</h4><p>两侧的欧拉乘积逐项相等，函数方程也一致。</p></div>
+        <div class="om-step"><div class="n">STEP 04</div><h4>用表示论解决算术</h4><p>把不可解的问题搬到谱侧，用分析、几何或迹公式处理。</p></div>
+      </div>
+
+      <div class="quote-block reveal" style="margin-top:54px;">
+        纲领最迷人的地方，不是它已经给出了答案，而是它让问题改变了语言。
+        <small>本站编辑按 · 不是朗兰兹原话</small>
+      </div>
+
+      <div class="callout reveal" style="margin-top:34px;">
+        <div class="label">先记住三个词</div>
+        <p><strong>互反</strong>（reciprocity）：算术表示 ↔ 自守表示。&nbsp;&nbsp;<strong>函子性</strong>（functoriality）：对偶群的同态诱导自守表示的转移。&nbsp;&nbsp;<strong>L-函数</strong>：两侧共同的指纹。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter" id="core" data-scene="duality">
+    <div class="chapter-inner">
+      <div class="chapter-head">
+        <div class="head-left">
+          <span class="ghost-num" aria-hidden="true">02</span>
+          <div class="eyebrow">Core / 核心</div>
+          <h2>互反、函子性<br>与 <span class="thin">L-函数</span></h2>
+        </div>
+        <div class="head-right">
+          <p>如果同一座山有三条路，那么我们需要的不是一条新路，而是一本词典。朗兰兹给出的词典有两个核心条目：互反，告诉你哪些对象互为翻译；函子性，告诉你翻译如何复合。</p>
+          <div class="meta"><span><b>关键词</b> Galois · Automorphic · L-group</span><span><b>数学层级</b> 研究生入门</span></div>
+        </div>
+      </div>
+
+      <div class="core-lead">
+        <div class="lead-q reveal">“如果同一个对象有两种语言，我们能否写出它的<strong>词典</strong>？”</div>
+        <div class="body-copy reveal d1">
+          <p>朗兰兹的答案是把词典写成一组对应：一边是数域的绝对伽罗瓦群到对偶群的连续表示，另一边是 adele 群上的自守表示。词典的每一页都由局部信息拼成：每个素数处有一个局部对应，整体则由这些局部碎片粘合。</p>
+          <p>这不是一个已经完成的等价，而是一组关于“应当存在什么”的精确预言。预言越精确，越容易被检验；也越容易在特殊情形下被发现是错的——幸运的是，它至今仍然站得住。</p>
+        </div>
+      </div>
+
+      <div class="core-blocks">
+        <article class="core-block reveal">
+          <div class="cb-no">01<small>RECIPROCITY</small></div>
+          <div>
+            <h3>互反：让算术对象<em>拥有</em>一个表示</h3>
+            <p>朗兰兹互反猜想的最初形式，是把数域 <em>K</em> 上的 <em>n</em> 维伽罗瓦表示与 GL(<em>n</em>, <strong>A</strong><sub>K</sub>) 的自守尖点表示对应起来。对应保持局部参数与 L-函数：一个来自算术的表示，和一个来自调和分析的表示，拥有同一套指纹。</p>
+            <p>当 <em>n</em> = 1 时，它就是类域论；当 <em>n</em> = 2、<em>K</em> = <strong>Q</strong> 时，模性定理提供了大量实例。但“大量实例”不等于“全部”：一般 <em>n</em> 与一般数域仍是开放海域。</p>
+            <div class="mini-formula">ρ : Gal(K̄/K) ⟶ GL<sub>n</sub>(<strong>C</strong>) &nbsp;↔&nbsp; π ∈ Π<sub>cusp</sub>(GL<sub>n</sub>(<strong>A</strong><sub>K</sub>))</div>
+          </div>
+        </article>
+
+        <article class="core-block reveal">
+          <div class="cb-no">02<small>FUNCTORIALITY</small></div>
+          <div>
+            <h3>函子性：让翻译<em>可以复合</em></h3>
+            <p>函子性是朗兰兹纲领最激进的部份：任何 L-群之间的同态 <sup>L</sup>G → <sup>L</sup>H，都应当诱导自守表示从 G 到 H 的转移，并保持 L-函数的相容性。它预测了对称平方、张量积、外平方、基底变换等大量操作的存在性。</p>
+            <p>互反可以看作函子性在特定情形下的推论，但函子性本身更广，也更开放。它不只说“存在一个对应”，而是说“所有自然的对称操作都应当在自守侧有影子”。</p>
+            <div class="mini-formula">φ : <sup>L</sup>G → <sup>L</sup>H &nbsp;⟹&nbsp; Π(G) → Π(H), &nbsp; L(s, π, r ∘ φ) = L(s, φ(π), r)</div>
+          </div>
+        </article>
+
+        <article class="core-block reveal">
+          <div class="cb-no">03<small>L-GROUP &amp; L-FUNCTION</small></div>
+          <div>
+            <h3>L-群与 L-函数：词典的<em>语法</em></h3>
+            <p>L-群 <sup>L</sup>G 由对偶群 G<sup>∨</sup>、伽罗瓦群 Γ<sub>K</sub> 以及二者的作用组成。它把“群”“对偶群”“伽罗瓦对称”打包成一个对象，使函子性可以被写成同态。局部无分歧时，Satake 同构把 Hecke 算子与对偶群的上同调对齐。</p>
+            <p>L-函数则是词典的检验器：它由局部因子经欧拉乘积拼成，理论上应具有解析延拓、函数方程与某种 Riemann 假设。互反与函子性，最终都可以被表述为 L-函数的相等或相容。</p>
+            <div class="mini-formula">L(s, π, r) = ∏<sub>p∤N</sub> det( I − r(φ<sub>π</sub>(Frob<sub>p</sub>)) p<sup>−s</sup> )<sup>−1</sup></div>
+          </div>
+        </article>
+      </div>
+
+      <figure class="plate reveal" style="margin-top:36px;">
+        <img src="assets/fig-functoriality.svg" alt="函子性示意图：对偶群的同态诱导自守表示的转移" width="1200" height="720">
+        <figcaption><span><b>PLATE 03</b> / FUNCTORIALITY</span><span>函子性把“群之间的同态”翻译成“自守表示之间的转移”。不是每个同态都已实现；这正是纲领的开放部分。</span></figcaption>
+      </figure>
+
+      <div class="formula-panel reveal">
+        <div class="fp-label"><span>THE MASTER EQUATION / 示意</span><span>LOCAL → GLOBAL</span></div>
+        <div class="formula-main">
+          L(s, <span class="var">ρ</span>) <span class="op">=</span> L(s, <span class="var">π</span>) <span class="op">=</span> ∏<sub>p</sub> L<sub>p</sub>(s, <span class="var">π<sub>p</sub></span>)
+        </div>
+        <div class="formula-sub">
+          <span><b>ρ</b> 伽罗瓦表示</span><span><b>π</b> 自守表示</span><span><b>p</b> 素数 / 局部位置</span><span><b>L<sub>p</sub></b> 局部因子</span>
+        </div>
+      </div>
+
+      <figure class="plate reveal" style="margin-top:36px;">
+        <img src="assets/fig-lfunction.svg" alt="L-函数的临界带、欧拉乘积、函数方程与零点示意图" width="1200" height="720">
+        <figcaption><span><b>PLATE 04</b> / L-FUNCTIONS</span><span>临界带、欧拉乘积与函数方程。零点的分布是示意；广义黎曼猜想仍是开放问题。</span></figcaption>
+      </figure>
+
+      <div class="dual-grid">
+        <div class="dual-col reveal">
+          <div class="tag">ARITHMETIC SIDE</div>
+          <h3>算术侧：从对称性到矩阵</h3>
+          <p>伽罗瓦群描述方程根的对称性。把它作用在向量空间上，就得到伽罗瓦表示；Frobenius 元素在未分歧素数处的特征值，成为局部 L-因子。Weil 猜想已经示范过：算术计数可以被翻译成线性算子。</p>
+          <p>但伽罗瓦群极其神秘。我们不知道一般数域的绝对伽罗瓦群长什么样，也很难直接构造它的高维表示。朗兰兹的策略是：不要正面构造，去自守侧找它。</p>
+        </div>
+        <div class="dual-col reveal d1">
+          <div class="tag">AUTOMORPHIC SIDE</div>
+          <h3>表示侧：从函数到谱</h3>
+          <p>自守形式是满足高度对称性的函数；自守表示则是这些函数生成的表示空间。它们的优势是“可分解”：整体表示可以写成局部表示的受限张量积，于是每个素数处的问题可以单独研究，再粘合起来。</p>
+          <p>Hecke 算子的特征值给出局部参数，谱分解给出整体结构。表示论提供了分析工具：积分、迹公式、Plancherel 公式。这些工具正是数论所缺少的。</p>
+        </div>
+      </div>
+
+      <figure class="plate reveal" style="margin-top:34px;">
+        <img src="assets/fig-duality.svg" alt="群 G 与对偶群 G∨ 之间的朗兰兹对偶示意" width="1200" height="720">
+        <figcaption><span><b>PLATE 02</b> / DUALITY</span><span>G 与 <sup>L</sup>G 不是同一个群；对偶群记录的是表示论的对偶结构，L-群还记录伽罗瓦作用。</span></figcaption>
+      </figure>
+
+      <div class="dual-grid" style="margin-top:54px;">
+        <div class="dual-col reveal">
+          <div class="tag">LOCAL / GLOBAL</div>
+          <h3>局部—整体：每个素数都是一页</h3>
+          <p>局部朗兰兹描述 p-adic 域上的 Weil–Deligne 参数与 G(Q<sub>p</sub>) 的不可约光滑表示之间的对应，通常以 L-packet 的形式出现。GL(n) 的情形已由 Harris–Taylor 与 Henniart 证明；一般约化群仍是活跃前沿。</p>
+          <p>整体对应则要求：一个整体伽罗瓦表示在每个素数处的局部成分，恰好对应一个整体自守表示的局部成分。这种“逐点粘合”是朗兰兹纲领最深刻的架构之一。</p>
+        </div>
+        <div class="dual-col reveal d1">
+          <div class="tag">TRACE FORMULA</div>
+          <h3>迹公式：把对应变成计数</h3>
+          <p>Arthur–Selberg 迹公式把自守谱的加权计数与共轭轨道的积分相等。它是一族等式：选择不同的测试函数，就提取不同的算术信息。稳定化与内窥分类让两侧的基本单元可以比较。</p>
+          <p>基本引理是这套比较的关键恒等式，由吴宝珠在 2008 年证明。没有它，迹公式的稳定化就缺一块基石；有了它，Arthur 的内窥分类才得以完成。</p>
+        </div>
+      </div>
+
+      <figure class="plate reveal" style="margin-top:34px;">
+        <img src="assets/fig-trace.svg" alt="迹公式的谱侧与几何侧示意" width="1200" height="720">
+        <figcaption><span><b>PLATE 06</b> / TRACE FORMULA</span><span>左侧是自守谱的加权计数，右侧是共轭轨道的积分。等式不是恒真，而是需要稳定化与比较的深刻定理。</span></figcaption>
+      </figure>
+
+      <div class="dna-strip reveal">
+        <div class="dna-cell"><b>ρ</b><span>Galois representation</span></div>
+        <div class="dna-cell"><b>π</b><span>Automorphic representation</span></div>
+        <div class="dna-cell"><b><sup>L</sup>G</b><span>L-group / 函子性的语法</span></div>
+        <div class="dna-cell"><b>L(s)</b><span>局部因子的欧拉乘积</span></div>
+        <div class="dna-cell"><b>Σ<sub>π</sub> = Σ<sub>γ</sub></b><span>谱侧 = 几何侧</span></div>
+      </div>
+
+      <details class="deep reveal">
+        <summary>再深入一点：为什么是“对偶群”？ <span>+</span></summary>
+        <div class="deep-body">
+          <p>对偶群来自根数据的对偶：把根与余根交换，Cartan 矩阵转置，就得到另一个根数据，从而得到对偶群。对 GL(n) 而言，对偶群仍是 GL(n)；对 SO(2n+1) 与 Sp(2n)，对偶关系会把它们配对。L-群则在此基础上再加入伽罗瓦群与作用，因而不是单纯的“对偶群”。</p>
+          <p>函子性之所以用 L-群表述，是因为自守表示的自然操作（张量积、对称幂、基底变换）在群层面都有对应的同态；L-群是把这些同态组织起来的最小语言。</p>
+        </div>
+      </details>
+
+      <details class="deep reveal">
+        <summary>再深入一点：互反与函子性，谁推出谁？ <span>+</span></summary>
+        <div class="deep-body">
+          <p>在最简单的设定下，互反可以看作函子性的一部分：从 GL(1) 到 GL(n) 的转移，配合伽罗瓦侧的对偶，给出高维互反。但一般情形下，两者是不同的猜想：函子性还包含群之间的转移，互反则聚焦于伽罗瓦表示与自守表示的对应。它们互相支撑，但不能简单地说“一个等价于另一个”。</p>
+        </div>
+      </details>
+
+      <div class="callout reveal" style="margin-top:40px;">
+        <div class="label">一句话版本</div>
+        <p>朗兰兹纲领试图证明：<strong>算术的对称性</strong>与<strong>自守的谱</strong>是同一件事的两种写法，而 <strong>L-函数</strong>是它们共同的指纹。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter" id="history" data-scene="history">
+    <div class="chapter-inner">
+      <div class="chapter-head">
+        <div class="head-left">
+          <span class="ghost-num" aria-hidden="true">03</span>
+          <div class="eyebrow">History / 历史</div>
+          <h2>从一封信<br>到<span class="thin">一张网</span></h2>
+        </div>
+        <div class="head-right">
+          <p>朗兰兹纲领不是 1967 年突然出现的。它站在类域论、Hecke 的 L-函数、Weil 猜想与 Selberg 迹公式的肩膀上；它也不是 2024 年突然完成的。每一个“突破”都只是把某一片海域点亮。</p>
+          <div class="meta"><span><b>跨度</b> 1900 — 2025</span><span><b>条目</b> 27 个节点</span></div>
+        </div>
+      </div>
+
+      <div class="timeline-toolbar">
+        <div class="chip-row" id="timeline-filters" aria-label="按年代筛选">
+          <button class="chip is-active" type="button" data-filter="all" aria-pressed="true">全部</button>
+          <button class="chip" type="button" data-filter="pre" aria-pressed="false">前史</button>
+          <button class="chip" type="button" data-filter="1960s" aria-pressed="false">1960s</button>
+          <button class="chip" type="button" data-filter="1970s" aria-pressed="false">1970s</button>
+          <button class="chip" type="button" data-filter="1980s" aria-pressed="false">1980s</button>
+          <button class="chip" type="button" data-filter="1990s" aria-pressed="false">1990s</button>
+          <button class="chip" type="button" data-filter="2000s" aria-pressed="false">2000s</button>
+          <button class="chip" type="button" data-filter="2010s" aria-pressed="false">2010s</button>
+          <button class="chip" type="button" data-filter="2020s" aria-pressed="false">2020s</button>
+        </div>
+        <div class="count"><b id="tl-count">27</b> NODES / CLICK TO EXPAND</div>
+      </div>
+
+      <div class="timeline" id="timeline"></div>
+
+      <div class="callout reveal" style="margin-top:44px;">
+        <div class="label">读历史时请注意</div>
+        <p>时间线把复杂的历史压成了节点。真实的数学史充满并行的尝试、失败的证明、未被记录的讨论与重新命名。这里的年份指向“关键论文或公开事件”，不表示所有工作都在那一年完成。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter" id="people" data-scene="people">
+    <div class="chapter-inner">
+      <div class="chapter-head">
+        <div class="head-left">
+          <span class="ghost-num" aria-hidden="true">04</span>
+          <div class="eyebrow">People / 人物</div>
+          <h2>把星星<br><span class="thin">连起来的人</span></h2>
+        </div>
+        <div class="head-right">
+          <p>朗兰兹纲领不是一个人的作品。它由提出者、表示论学家、算术几何学家、p-adic 几何学家与一整代研究生共同建造。下面是一张不完整的人物星图。</p>
+          <div class="meta"><span><b>档案</b> 22 人</span><span><b>范围</b> 奠基者 → 新一代</span></div>
+        </div>
+      </div>
+
+      <div class="people-note reveal">
+        <span class="gold">▲</span>
+        <div><b>关于图像：</b>本站没有使用未经授权的人物照片。每张卡片上的“星徽”是由姓名、年份与领域编码生成的原创 SVG 图案，<strong>不是写实肖像</strong>，也不试图模拟外貌。点击卡片可打开详细档案。</div>
+      </div>
+
+      <div class="people-toolbar">
+        <div class="chip-row" id="people-filters" aria-label="按角色筛选">
+          <button class="chip is-active" type="button" data-filter="all" aria-pressed="true">全部</button>
+          <button class="chip" type="button" data-filter="founder" aria-pressed="false">奠基者</button>
+          <button class="chip" type="button" data-filter="representation" aria-pressed="false">表示论</button>
+          <button class="chip" type="button" data-filter="arithmetic" aria-pressed="false">算术</button>
+          <button class="chip" type="button" data-filter="geometry" aria-pressed="false">几何</button>
+          <button class="chip" type="button" data-filter="new" aria-pressed="false">新一代</button>
+        </div>
+        <div class="mono">22 ARCHIVES · CLICK A SIGIL</div>
+      </div>
+
+      <div class="people-grid" id="people-grid"></div>
+
+      <div class="callout reveal" style="margin-top:34px;">
+        <div class="label">关于“人物”的边界</div>
+        <p>这张名单省略了许多同样重要的人：Kottwitz、Clozel、Vogan、Mok、Kaletha、Ben-Zvi、Sakellaridis、Venkatesh、Scholze 的合作者、Lafforgue 的审稿人，以及无数没有出现在新闻标题里的研究者。朗兰兹纲领是一部集体作品。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter" id="concepts" data-scene="concepts">
+    <div class="chapter-inner">
+      <div class="chapter-head">
+        <div class="head-left">
+          <span class="ghost-num" aria-hidden="true">05</span>
+          <div class="eyebrow">Concepts / 概念</div>
+          <h2>没有中心的<br><span class="thin">概念之网</span></h2>
+        </div>
+        <div class="head-right">
+          <p>不要试图找到一个“最核心”的概念。朗兰兹纲领更像一张网络：互反连接伽罗瓦与自守，函子性连接群与群，L-函数连接局部与整体，迹公式把谱与几何缝在一起。</p>
+          <div class="meta"><span><b>节点</b> 15 个</span><span><b>建议</b> 先读互反与函子性</span></div>
+        </div>
+      </div>
+
+      <div class="concept-layout">
+        <div class="reveal">
+          <div class="concept-nav" id="concept-nav" aria-label="概念索引"></div>
+          <div class="dependency">
+            <div class="dep-title">一条最短的概念路径</div>
+            <div class="dep-chain">
+              <span>类域论</span><i>→</i><span>互反</span><i>→</i><span>L-群</span><i>→</i><span>函子性</span><i>→</i><span>自守表示</span><i>→</i><span>迹公式</span>
+            </div>
+          </div>
+        </div>
+        <div class="concept-figure reveal d1">
+          <figure class="plate" style="margin:0;">
+            <img src="assets/fig-web.svg" alt="朗兰兹纲领核心概念的网络图" width="1200" height="760">
+            <figcaption><span><b>PLATE 07</b> / THE WEB</span><span>概念图省略了箭头方向与强弱；它不是严格的知识图谱。</span></figcaption>
+          </figure>
+          <div class="caption">点击左侧索引或下方卡片，打开概念档案。每一个档案都包含定义、它在纲领中的角色、当前状态与相邻概念。</div>
+        </div>
+      </div>
+
+      <div class="concept-grid" id="concept-grid"></div>
+
+      <figure class="plate reveal" style="margin-top:44px;">
+        <img src="assets/fig-map.svg" alt="局部、全局数域、函数域与几何朗兰兹的概念地图" width="1200" height="760">
+        <figcaption><span><b>PLATE 05</b> / THE ARCHIPELAGO</span><span>地图是概念示意：区域、距离与面积不表示数学上的包含关系。</span></figcaption>
+      </figure>
+
+      <details class="deep reveal">
+        <summary>如何读一张朗兰兹概念图？ <span>+</span></summary>
+        <div class="deep-body">
+          <p>先区分三组坐标：<strong>局部 / 整体</strong>（在单个素数处，还是在全局对象上）、<strong>数域 / 函数域</strong>（算术对象有没有曲线模型）、<strong>算术 / 几何</strong>（对应是关于 Galois 表示，还是关于局部系统与层）。同一个词在不同坐标下含义可能不同，这是阅读朗兰兹文献最容易踩的坑。</p>
+          <p>再区分“猜想”“定理”“工具”与“框架”。L-群是框架，迹公式是工具，互反是猜想，GL(n) 函数域是定理。把它们混在一起，就会得到“朗兰兹已经被证明”这样的错误结论。</p>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <section class="chapter" id="status" data-scene="frontier">
+    <div class="chapter-inner">
+      <div class="chapter-head">
+        <div class="head-left">
+          <span class="ghost-num" aria-hidden="true">06</span>
+          <div class="eyebrow">Status / 现状</div>
+          <h2>哪里已经点亮<br><span class="thin">哪里仍是黑暗</span></h2>
+        </div>
+        <div class="head-right">
+          <p>“朗兰兹纲领被证明了吗？”这个问题没有单一答案。必须问：哪个群？哪个域？局部还是整体？算术还是几何？哪个精确表述？下面这张表试图把“已证明”拆成可比较的层次。</p>
+          <div class="meta"><span><b>资料截至</b> 2025</span><span><b>立场</b> 谨慎 / 可复核</span></div>
+        </div>
+      </div>
+
+      <div class="status-key">
+        <span><i class="dot-status proved"></i>已建立</span>
+        <span><i class="dot-status partial"></i>部分建立</span>
+        <span><i class="dot-status geometric"></i>几何突破</span>
+        <span><i class="dot-status open"></i>开放</span>
+      </div>
+
+      <div class="matrix" id="matrix" role="table" aria-label="朗兰兹纲领不同层次的研究现状"></div>
+
+      <div class="frontier-grid" id="frontier-grid"></div>
+
+      <div class="geo-proof reveal">
+        <div class="gp-main">
+          <div class="label">CASE STUDY / 2024</div>
+          <h3>几何朗兰兹：一次“百页论文群”的突破</h3>
+          <p>2024 年，Dennis Gaitsgory、Sam Raskin 等发表《Proof of the geometric Langlands conjecture》系列论文，构造从自守侧到谱侧的函子，并证明 de Rham、Betti、tempered 等不同表述之间的等价。这是几何朗兰兹自 1990 年代以来最重大的进展。</p>
+          <p>但它处理的是<strong>特征 0 的 de Rham/Betti 设定</strong>。分歧情形、正特征、以及最重要的——<strong>算术数域上的朗兰兹</strong>——并不会因此自动解决。数学界仍在审阅、修订与吸收这批论文，这个过程本身是正常的。</p>
+          <button class="btn ghost sm" id="geo-critique" type="button" style="margin-top:18px;">阅读“如何判断一条新闻” <span class="arr">→</span></button>
+        </div>
+        <div class="gp-side">
+          <div class="gp-stat"><b>5</b><span>系列论文<br>PAPERS I—V</span></div>
+          <div class="gp-stat"><b>2024</b><span>公开<br>ANNOUNCED</span></div>
+          <div class="gp-stat"><b>Char 0</b><span>设定<br>DE RHAM / BETTI</span></div>
+          <div class="gp-stat"><b>开放</b><span>分歧 / 正特征 / 算术<br>VARIANTS</span></div>
+        </div>
+      </div>
+
+      <div class="open-list">
+        <div class="open-item"><div class="oi-no">01</div><div><h4>一般函子性</h4><p>对一般约化群与一般 L-群同态，函子性远未解决。它是纲领中最有野心的部份之一。</p></div></div>
+        <div class="open-item"><div class="oi-no">02</div><div><h4>数域上的一般群</h4><p>数域缺少函数域那样的曲线模型；高维互反与一般约化群的整体对应仍是核心开放问题。</p></div></div>
+        <div class="open-item"><div class="oi-no">03</div><div><h4>一般局部朗兰兹</h4><p>GL(n) 已证明；一般约化群的局部对应仍在发展。Fargues–Scholze 提供了几何框架，但不是终点。</p></div></div>
+        <div class="open-item"><div class="oi-no">04</div><div><h4>广义黎曼猜想</h4><p>自守 L-函数的零点位置。它比互反更解析，也更遥远；即使对应存在，也不自动给出零点信息。</p></div></div>
+        <div class="open-item"><div class="oi-no">05</div><div><h4>Ramanujan 猜想</h4><p>自守局部参数应当 tempered。模形式情形有 Deligne 的界，但一般情形仍开放。</p></div></div>
+        <div class="open-item"><div class="oi-no">06</div><div><h4>动机朗兰兹</h4><p>为每个动机寻找自守表示。它依赖动机理论本身的基础，是更远景的猜想。</p></div></div>
+      </div>
+
+      <div class="body-copy reveal" style="margin-top:50px;">
+        <h3 style="font-family:var(--serif);font-size:clamp(24px,3vw,34px);margin-bottom:14px;">为什么这么难？</h3>
+        <p>第一，对象是无限维的。自守表示不是有限矩阵，而是函数空间上的作用；要做积分、取迹、比较轨道，需要大量分析。第二，伽罗瓦群的结构未知。除了阿贝尔情形，我们很难直接描述绝对伽罗瓦群；因此必须绕道表示论与几何。</p>
+        <p>第三，局部与整体的粘合并不自动。每个素数处都有一个对应，并不意味着它们能拼成一个整体对应；迹公式、L-函数的函数方程与局部因子的相容性，都是粘合的约束。第四，内窥与稳定化极其技术化：基本引理这样一个“看起来只是恒等式”的命题，卡了领域十几年。</p>
+        <p>最后，几何版本与算术版本之间没有已知的逻辑桥梁。几何朗兰兹的证明是巨大的成就，但它不是算术朗兰兹的证明。混淆两者，是媒体叙事中最常见的错误。</p>
+      </div>
+
+      <div class="callout reveal" style="margin-top:34px;">
+        <div class="label">给读者的判断工具</div>
+        <p>看到“朗兰兹被证明”时，先找四个限定词：<strong>哪个群</strong>、<strong>哪个域</strong>、<strong>局部还是整体</strong>、<strong>算术还是几何</strong>。四个都清楚了，新闻才有意义。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter" id="critique" data-scene="critique">
+    <div class="chapter-inner">
+      <div class="chapter-head">
+        <div class="head-left">
+          <span class="ghost-num" aria-hidden="true">07</span>
+          <div class="eyebrow">Critique / 边界</div>
+          <h2>统一是比喻<br><span class="thin">不是定理</span></h2>
+        </div>
+        <div class="head-right">
+          <p>朗兰兹纲领常被称为“数学的大统一理论”。这个比喻有启发性，也容易掩盖问题：它没有统一所有数学，也不是一个封闭的公理系统。一个成熟的介绍，应当同时说明它的边界、争议与未完成之处。</p>
+          <div class="meta"><span><b>立场</b> 建设性批评</span><span><b>目的</b> 抵抗过度宣传</span></div>
+        </div>
+      </div>
+
+      <div class="essay-grid">
+        <article class="essay reveal">
+          <div class="essay-no">E-01 / 整体性</div>
+          <h3>它不是单一命题，因此不能简单说“已证明”</h3>
+          <p>朗兰兹纲领包含互反、函子性、局部对应、L-函数的解析性质、内窥分类、几何版本等许多相互关联但逻辑上不同的猜想。某个版本被证明，不代表整个纲领完成。把“program”当作“theorem”，是范畴错误。</p>
+          <div class="essay-tag">关键词：猜想网络 / 精确表述</div>
+        </article>
+        <article class="essay reveal d1">
+          <div class="essay-no">E-02 / 还原论</div>
+          <h3>“统一”不等于“还原”</h3>
+          <p>纲领确实把数论、表示论与几何连接起来，但它并不主张所有数学都可以还原为自守表示。许多领域有自己的问题、方法与价值。把朗兰兹描述成“数学的终极理论”，是一种目的论叙事，而不是数学事实。</p>
+          <div class="essay-tag">关键词：统一 / 还原 / 目的论</div>
+        </article>
+        <article class="essay reveal">
+          <div class="essay-no">E-03 / 玩具模型</div>
+          <h3>函数域与几何版本不是数域的“练习册”</h3>
+          <p>函数域上的成功提供了结构与技术，但不能自动搬到数域。数域没有同样的曲线、向量丛与 Frobenius 几何。把函数域结果称为“玩具模型”既低估了它的深度，也掩盖了数域的真正困难。</p>
+          <div class="essay-tag">关键词：函数域 / 类比 / 迁移</div>
+        </article>
+        <article class="essay reveal d1">
+          <div class="essay-no">E-04 / 社会学</div>
+          <h3>大型证明需要大型审阅</h3>
+          <p>2024 年几何朗兰兹系列论文篇幅巨大，参与者众多。数学共同体需要时间审阅、验证与吸收；这不是对作者的不信任，而是数学作为公共知识的基本要求。把“预印本”直接等同于“已确立的定理”，会伤害公众理解。</p>
+          <div class="essay-tag">关键词：同行审阅 / 可复现性 / 信用</div>
+        </article>
+        <article class="essay wide reveal">
+          <div>
+            <div class="essay-no">E-05 / 哲学</div>
+            <h3>“罗塞塔石碑”隐喻的力量与危险</h3>
+          </div>
+          <div>
+            <p>罗塞塔石碑之所以有效，是因为同一段文字真的有三种平行书写。朗兰兹纲领的三种语言却不是已经确认的平行文本：它们是猜想中的对应。隐喻帮助我们想象目标，但也容易让人误以为翻译已经完成。</p>
+            <p>更准确的说法是：朗兰兹纲领在<strong>建造</strong>一块罗塞塔石碑，而不是发现了一块。已建立的部分是真实的；未建立的部分是任务，不是注脚。</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="myths" id="myths"></div>
+
+      <div class="checklist">
+        <div class="check-item"><div class="ci-no">01</div><div><h4>先看“证明了哪个版本”</h4><p>几何、函数域、数域、局部、整体：版本不同，难度与含义完全不同。</p></div></div>
+        <div class="check-item"><div class="ci-no">02</div><div><h4>再看“哪个群”</h4><p>GL(n)、一般约化群、甚至更一般的栈：群越一般，结论越弱或越局部。</p></div></div>
+        <div class="check-item"><div class="ci-no">03</div><div><h4>区分预印本与同行审阅</h4><p>预印本是重要成果，但不等于已通过审阅的定理。两者都值得关注，含义不同。</p></div></div>
+        <div class="check-item"><div class="ci-no">04</div><div><h4>警惕“大统一”标题</h4><p>“统一数学”是比喻。真正的进展通常有精确的限定条件，标题往往把它们删掉。</p></div></div>
+        <div class="check-item"><div class="ci-no">05</div><div><h4>看它是否解决了旧问题</h4><p>好的进展通常会推出可检验的推论，或与已知结果一致。只看篇幅与作者名气不够。</p></div></div>
+        <div class="check-item"><div class="ci-no">06</div><div><h4>给数学共同体时间</h4><p>大型证明的验证是数学的一部分，不是新闻发布会的附件。</p></div></div>
+      </div>
+
+      <div class="quote-block reveal" style="margin-top:48px;">
+        一个纲领的价值，不仅在于它承诺的终点，也在于它迫使我们重新提问的方式。
+        <small>本站编辑按 · 不是引文</small>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter" id="library" data-scene="library">
+    <div class="chapter-inner">
+      <div class="chapter-head">
+        <div class="head-left">
+          <span class="ghost-num" aria-hidden="true">08</span>
+          <div class="eyebrow">Library / 档案</div>
+          <h2>继续向<br><span class="thin">深处航行</span></h2>
+        </div>
+        <div class="head-right">
+          <p>这个网站是一张地图，不是终点。下面列出可以继续阅读的原始文献、综述、数据库与术语表。真正的朗兰兹纲领，藏在论文、讲义与讨论班里。</p>
+          <div class="meta"><span><b>入口</b> 原始文献 / 综述 / 术语</span><span><b>建议</b> 先读综述，再读论文</span></div>
+        </div>
+      </div>
+
+      <div class="library-grid">
+        <div class="reveal">
+          <div class="mono gold" style="margin-bottom:12px;">SELECTED BOOKS / 推荐书目</div>
+          <div class="book-list">
+            <div class="book"><div class="bk-type">综述<br>INTRO</div><div><h4><a href="https://link.springer.com/book/10.1007/978-3-0348-7995-8" target="_blank" rel="noopener noreferrer">An Introduction to the Langlands Program ↗</a></h4><div class="bk-meta">Bernstein &amp; Gelbart (eds.) · 2003</div><p>适合具备研究生代数与表示论基础的读者，覆盖互反、函子性、L-函数与几何侧。</p></div></div>
+            <div class="book"><div class="bk-type">教材<br>TEXT</div><div><h4><a href="https://www.cambridge.org/core/books/automorphic-forms-and-representations/" target="_blank" rel="noopener noreferrer">Automorphic Forms and Representations ↗</a></h4><div class="bk-meta">Daniel Bump · 1997</div><p>自守形式与表示论的标准教材，GL(2) 与 GL(n) 的基础从这里开始。</p></div></div>
+            <div class="book"><div class="bk-type">专著<br>TRACE</div><div><h4><a href="https://bookstore.ams.org/coll-61" target="_blank" rel="noopener noreferrer">The Endoscopic Classification of Representations ↗</a></h4><div class="bk-meta">James Arthur · 2013</div><p>辛群与正交群的内窥分类；迹公式稳定化的技术顶峰。</p></div></div>
+            <div class="book"><div class="bk-type">几何<br>GEOMETRY</div><div><h4><a href="https://press.princeton.edu/books/paperback/9780691096892/the-geometry-and-cohomology-of-some-simple-shimura-varieties" target="_blank" rel="noopener noreferrer">The Geometry and Cohomology of Some Simple Shimura Varieties ↗</a></h4><div class="bk-meta">Harris &amp; Taylor · 2001</div><p>GL(n) 局部朗兰兹的几何证明；Shimura 簇上同调方法的典范。</p></div></div>
+            <div class="book"><div class="bk-type">论文<br>2024</div><div><h4><a href="https://arxiv.org/abs/2405.03599" target="_blank" rel="noopener noreferrer">Proof of the geometric Langlands conjecture I ↗</a></h4><div class="bk-meta">Gaitsgory &amp; Raskin · 2024</div><p>几何朗兰兹系列论文的第一篇；从构造函子开始。</p></div></div>
+            <div class="book"><div class="bk-type">公共<br>PUBLIC</div><div><h4><a href="https://us.macmillan.com/books/9780465050747/loveandmath" target="_blank" rel="noopener noreferrer">Love and Math ↗</a></h4><div class="bk-meta">Edward Frenkel · 2013</div><p>一本面向公众的自传式导览，适合在正式学习前建立直觉。</p></div></div>
+          </div>
+        </div>
+        <div class="reveal d1">
+          <div class="mono gold" style="margin-bottom:12px;">SOURCES / 参考入口</div>
+          <div id="source-list"></div>
+          <div class="small" style="margin-top:18px;">链接指向原始论文、出版社或机构档案。外部网站的内容与可用性由相应机构负责。</div>
+        </div>
+      </div>
+
+      <div class="mono gold" style="margin-top:56px;margin-bottom:12px;">GLOSSARY / 术语表</div>
+      <dl class="glossary" id="glossary"></dl>
+
+      <div class="credits reveal">
+        <div>
+          <p><b>关于本站</b><br>这是一份独立制作的交互式数学导览，不是专业论文，也不隶属于任何机构。数学表述经过简化；状态截至 2025 年。若用于教学或引用，请回到原始文献核对。</p>
+          <p><b>视觉</b><br>站内所有图版（PLATE 01–07）、22 枚人物星徽、favicon 与 Canvas 星图均为本站原创或程序生成。没有使用未经授权的人物照片；星徽不是写实肖像。字体使用系统字体，不加载外部 CDN。</p>
+        </div>
+        <div>
+          <p><b>技术</b><br>原生 HTML / CSS / JavaScript；Canvas 2D 透视引擎；无框架、无追踪、无外部依赖。建议使用本地静态服务器打开，以获得完整的字体与资源加载体验。</p>
+          <p><b>阅读提示</b><br>金色文字是数学对象或章节标记；青色偏表示论；紫色偏几何；玫瑰色偏“开放 / 争议”。按 <kbd>G</kbd> 打开目录，按 <kbd>Esc</kbd> 关闭弹层。自由探索模式支持拖拽旋转、滚轮缩放、双击复位。</p>
+        </div>
+      </div>
+
+      <div class="final-cta reveal">
+        <h3>星图没有尽头。<br>但每一次点击，都是一次定位。</h3>
+        <p>回到 1967 年的那封信，或者直接进入自由探索，从任意一个节点开始你的路径。</p>
+        <div class="actions">
+          <a class="btn primary" href="#origin">回到起点 <span class="arr">↑</span></a>
+          <button class="btn ghost" id="explore-enter-3" type="button">自由探索 <span class="arr">◎</span></button>
+          <button class="btn ghost" id="nav-open-2" type="button">完整目录 <span class="arr">☰</span></button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark"><span>L</span></span>
+      <div>
+        <b>朗兰兹宇宙 · THE LANGLANDS UNIVERSE</b>
+        <p>一张关于互反、函子性与 L-函数的交互式星图。为好奇的读者而作，也为仍然在黑暗中航行的数学家而作。</p>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>章节 / CHAPTERS</h4>
+      <a href="#orientation">01 导览</a>
+      <a href="#core">02 核心</a>
+      <a href="#history">03 历史</a>
+      <a href="#people">04 人物</a>
+      <a href="#concepts">05 概念</a>
+    </div>
+    <div class="footer-col">
+      <h4>继续 / ELSEWHERE</h4>
+      <a href="https://publications.ias.edu/rpl/" target="_blank" rel="noopener noreferrer">IAS · Langlands archive ↗</a>
+      <a href="https://arxiv.org/list/math.NT/recent" target="_blank" rel="noopener noreferrer">arXiv · math.NT ↗</a>
+      <a href="https://abelprize.no/abel-prize-laureates/2018" target="_blank" rel="noopener noreferrer">Abel Prize 2018 ↗</a>
+      <a href="#status">06 现状</a>
+      <a href="#critique">07 边界</a>
+      <a href="#library">08 档案</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>AN INDEPENDENT INTERACTIVE ATLAS · 2025</span>
+    <span>MADE WITH VANILLA HTML / CSS / JS · NO TRACKING</span>
+  </div>
+</footer>
+
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal-backdrop"></div>
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <button class="modal-close" type="button" aria-label="关闭档案">×</button>
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+<div class="nav-overlay" id="nav-overlay" aria-hidden="true">
+  <button class="modal-close close-overlay" id="nav-close" type="button" aria-label="关闭目录">×</button>
+  <div class="nav-overlay-inner">
+    <div class="eyebrow">Index / 星图目录</div>
+    <h2>选择一条航线</h2>
+    <div class="nav-grid">
+      <a href="#origin"><b>00</b><span>起点 · 朗兰兹宇宙</span><em>ORIGIN</em></a>
+      <a href="#orientation"><b>01</b><span>导览 · 三种语言</span><em>ORIENTATION</em></a>
+      <a href="#core"><b>02</b><span>核心 · 互反与函子性</span><em>CORE</em></a>
+      <a href="#history"><b>03</b><span>历史 · 从信到网</span><em>HISTORY</em></a>
+      <a href="#people"><b>04</b><span>人物 · 二十二枚星徽</span><em>PEOPLE</em></a>
+      <a href="#concepts"><b>05</b><span>概念 · 没有中心的网</span><em>CONCEPTS</em></a>
+      <a href="#status"><b>06</b><span>现状 · 已点亮的海岸</span><em>STATUS</em></a>
+      <a href="#critique"><b>07</b><span>边界 · 统一是比喻</span><em>CRITIQUE</em></a>
+      <a href="#library"><b>08</b><span>档案 · 继续航行</span><em>LIBRARY</em></a>
+      <div class="nav-filler" aria-hidden="true"><b>09</b><span>仍在生长 · TO BE CONTINUED</span><em>∞</em></div>
+    </div>
+  </div>
+</div>
+
+<div class="explore-panel" id="explore-panel" aria-live="polite">
+  <div class="ep-kicker">自由探索 / THE LANGLANDS GALAXY</div>
+  <h3>朗兰兹星系</h3>
+  <p>拖动旋转视角，点击星点打开档案。</p>
+  <div class="ep-hint">拖拽旋转 · 滚轮缩放 · 双击复位 · Esc 退出</div>
+</div>
+<div class="explore-dock" id="explore-dock" aria-label="自由探索场景切换"></div>
+
+<noscript>
+  <div style="position:fixed;left:20px;right:20px;bottom:20px;z-index:500;background:#08111e;border:1px solid #d7b476;padding:16px;font-family:sans-serif;color:#ece5d6;">
+    本站的 3D 星图、人物档案与时间线需要 JavaScript。正文内容仍可阅读。
+  </div>
+</noscript>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

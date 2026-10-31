@@ -1,0 +1,262 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" width="1200" height="720" role="img" aria-labelledby="title desc">
+<title id="title">迹公式</title>
+<desc id="desc">谱侧与几何侧之间的等式</desc>
+
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#050811"/>
+    <stop offset=".52" stop-color="#07101d"/>
+    <stop offset="1" stop-color="#0a0a18"/>
+  </linearGradient>
+  <radialGradient id="halo" cx="50%" cy="46%" r="58%">
+    <stop offset="0" stop-color="#d9b779" stop-opacity=".16"/>
+    <stop offset=".45" stop-color="#d9b779" stop-opacity=".05"/>
+    <stop offset="1" stop-color="#d9b779" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="goldglow" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#d9b779" stop-opacity=".9"/>
+    <stop offset=".18" stop-color="#d9b779" stop-opacity=".38"/>
+    <stop offset="1" stop-color="#d9b779" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="goldline" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#d9b779" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#d9b779" stop-opacity=".9"/>
+    <stop offset="1" stop-color="#d9b779" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+    <feGaussianBlur stdDeviation="5" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="tinyglow" x="-80%" y="-80%" width="260%" height="260%">
+    <feGaussianBlur stdDeviation="2" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <pattern id="microgrid" width="24" height="24" patternUnits="userSpaceOnUse">
+    <path d="M24 0H0V24" fill="none" stroke="#b9c7dd" stroke-opacity=".055" stroke-width=".6"/>
+  </pattern>
+  <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="7" stroke="#f28fbe" stroke-opacity=".18" stroke-width="1"/>
+  </pattern>
+  <clipPath id="frame"><rect x="0" y="0" width="1200" height="720"/></clipPath>
+</defs>
+<rect width="1200" height="720" fill="url(#bg)"/>
+<rect width="1200" height="720" fill="url(#halo)"/>
+<rect width="1200" height="720" fill="url(#microgrid)" clip-path="url(#frame)"/>
+<circle cx="85.0" cy="312.9" r="0.5" fill="#e8e0cf" opacity="0.46"/>
+<circle cx="1174.1" cy="564.0" r="0.5" fill="#e8e0cf" opacity="0.44"/>
+<circle cx="593.9" cy="337.3" r="0.5" fill="#e8e0cf" opacity="0.51"/>
+<circle cx="857.3" cy="524.3" r="0.9" fill="#e8e0cf" opacity="0.43"/>
+<circle cx="605.9" cy="380.4" r="0.9" fill="#e8e0cf" opacity="0.54"/>
+<circle cx="1056.5" cy="511.2" r="0.9" fill="#e8e0cf" opacity="0.54"/>
+<circle cx="382.1" cy="347.7" r="0.7" fill="#e8e0cf" opacity="0.21"/>
+<circle cx="908.7" cy="230.6" r="0.7" fill="#e8e0cf" opacity="0.46"/>
+<circle cx="372.5" cy="290.5" r="0.5" fill="#e8e0cf" opacity="0.38"/>
+<circle cx="725.0" cy="40.8" r="0.9" fill="#e8e0cf" opacity="0.36"/>
+<circle cx="1018.0" cy="306.8" r="0.9" fill="#e8e0cf" opacity="0.47"/>
+<circle cx="1060.6" cy="517.7" r="0.5" fill="#e8e0cf" opacity="0.20"/>
+<circle cx="972.8" cy="593.0" r="0.7" fill="#e8e0cf" opacity="0.32"/>
+<circle cx="892.1" cy="244.5" r="1.2" fill="#e8e0cf" opacity="0.34"/>
+<circle cx="345.9" cy="623.5" r="0.7" fill="#e8e0cf" opacity="0.15"/>
+<circle cx="964.5" cy="12.3" r="0.5" fill="#e8e0cf" opacity="0.19"/>
+<circle cx="808.8" cy="501.7" r="0.5" fill="#e8e0cf" opacity="0.45"/>
+<circle cx="506.5" cy="403.2" r="0.7" fill="#e8e0cf" opacity="0.42"/>
+<circle cx="989.0" cy="432.0" r="0.5" fill="#e8e0cf" opacity="0.53"/>
+<circle cx="591.3" cy="482.9" r="0.5" fill="#e8e0cf" opacity="0.54"/>
+<circle cx="259.0" cy="71.3" r="0.7" fill="#e8e0cf" opacity="0.31"/>
+<circle cx="497.9" cy="248.4" r="0.5" fill="#e8e0cf" opacity="0.29"/>
+<circle cx="862.9" cy="410.5" r="0.5" fill="#e8e0cf" opacity="0.46"/>
+<circle cx="704.9" cy="542.3" r="0.5" fill="#e8e0cf" opacity="0.36"/>
+<circle cx="1115.8" cy="192.8" r="1.2" fill="#e8e0cf" opacity="0.46"/>
+<circle cx="901.2" cy="498.3" r="0.5" fill="#e8e0cf" opacity="0.26"/>
+<circle cx="356.8" cy="678.3" r="0.5" fill="#e8e0cf" opacity="0.29"/>
+<circle cx="866.4" cy="398.3" r="0.5" fill="#e8e0cf" opacity="0.21"/>
+<circle cx="1069.5" cy="292.7" r="1.2" fill="#e8e0cf" opacity="0.23"/>
+<circle cx="1089.4" cy="178.8" r="1.2" fill="#e8e0cf" opacity="0.29"/>
+<circle cx="90.3" cy="89.1" r="0.7" fill="#e8e0cf" opacity="0.43"/>
+<circle cx="915.0" cy="139.9" r="0.5" fill="#e8e0cf" opacity="0.50"/>
+<circle cx="1076.9" cy="510.5" r="0.7" fill="#e8e0cf" opacity="0.18"/>
+<circle cx="1042.6" cy="275.0" r="0.9" fill="#e8e0cf" opacity="0.54"/>
+<circle cx="1153.5" cy="596.4" r="0.9" fill="#e8e0cf" opacity="0.53"/>
+<circle cx="539.0" cy="589.9" r="1.2" fill="#e8e0cf" opacity="0.30"/>
+<circle cx="51.7" cy="157.7" r="1.2" fill="#e8e0cf" opacity="0.51"/>
+<circle cx="971.7" cy="24.4" r="0.5" fill="#e8e0cf" opacity="0.20"/>
+<circle cx="1063.1" cy="184.9" r="0.5" fill="#e8e0cf" opacity="0.30"/>
+<circle cx="572.7" cy="626.4" r="0.7" fill="#e8e0cf" opacity="0.33"/>
+<circle cx="97.1" cy="34.2" r="1.2" fill="#e8e0cf" opacity="0.14"/>
+<circle cx="376.7" cy="441.5" r="0.9" fill="#e8e0cf" opacity="0.34"/>
+<circle cx="861.3" cy="587.8" r="0.5" fill="#e8e0cf" opacity="0.37"/>
+<circle cx="389.5" cy="200.2" r="0.5" fill="#e8e0cf" opacity="0.27"/>
+<circle cx="173.9" cy="222.0" r="0.7" fill="#e8e0cf" opacity="0.50"/>
+<circle cx="1185.2" cy="295.4" r="0.5" fill="#e8e0cf" opacity="0.53"/>
+<circle cx="609.2" cy="451.3" r="0.5" fill="#e8e0cf" opacity="0.14"/>
+<circle cx="1156.0" cy="142.4" r="1.2" fill="#e8e0cf" opacity="0.20"/>
+<circle cx="1156.0" cy="142.4" r="4.8" fill="#d9b779" opacity=".10"/>
+<circle cx="305.8" cy="575.4" r="0.5" fill="#e8e0cf" opacity="0.22"/>
+<circle cx="8.6" cy="250.3" r="0.5" fill="#e8e0cf" opacity="0.15"/>
+<circle cx="995.6" cy="314.4" r="0.7" fill="#e8e0cf" opacity="0.35"/>
+<circle cx="527.3" cy="232.4" r="0.5" fill="#e8e0cf" opacity="0.12"/>
+<circle cx="627.5" cy="499.0" r="0.9" fill="#e8e0cf" opacity="0.19"/>
+<circle cx="291.5" cy="467.4" r="0.5" fill="#e8e0cf" opacity="0.41"/>
+<circle cx="291.5" cy="467.4" r="2.0" fill="#d9b779" opacity=".10"/>
+<circle cx="560.7" cy="429.5" r="0.5" fill="#e8e0cf" opacity="0.35"/>
+<circle cx="141.8" cy="227.4" r="1.2" fill="#e8e0cf" opacity="0.52"/>
+<circle cx="1163.0" cy="487.6" r="0.5" fill="#e8e0cf" opacity="0.12"/>
+<circle cx="833.6" cy="33.0" r="0.7" fill="#e8e0cf" opacity="0.17"/>
+<circle cx="553.5" cy="484.9" r="0.9" fill="#e8e0cf" opacity="0.33"/>
+<circle cx="974.8" cy="572.1" r="0.5" fill="#e8e0cf" opacity="0.17"/>
+<circle cx="693.5" cy="677.5" r="0.9" fill="#e8e0cf" opacity="0.51"/>
+<circle cx="930.7" cy="409.9" r="1.2" fill="#e8e0cf" opacity="0.38"/>
+<circle cx="614.1" cy="410.5" r="0.5" fill="#e8e0cf" opacity="0.28"/>
+<circle cx="552.1" cy="176.4" r="0.5" fill="#e8e0cf" opacity="0.20"/>
+<circle cx="354.2" cy="367.0" r="1.2" fill="#e8e0cf" opacity="0.38"/>
+<circle cx="952.5" cy="531.4" r="0.5" fill="#e8e0cf" opacity="0.26"/>
+<circle cx="883.7" cy="683.7" r="0.9" fill="#e8e0cf" opacity="0.19"/>
+<circle cx="560.2" cy="127.4" r="1.2" fill="#e8e0cf" opacity="0.41"/>
+<circle cx="1043.6" cy="402.2" r="0.5" fill="#e8e0cf" opacity="0.20"/>
+<circle cx="460.3" cy="599.3" r="1.2" fill="#e8e0cf" opacity="0.36"/>
+<circle cx="467.8" cy="57.6" r="0.5" fill="#e8e0cf" opacity="0.32"/>
+<circle cx="658.8" cy="59.3" r="0.9" fill="#e8e0cf" opacity="0.38"/>
+<circle cx="787.5" cy="314.8" r="0.9" fill="#e8e0cf" opacity="0.26"/>
+<circle cx="307.3" cy="178.6" r="0.5" fill="#e8e0cf" opacity="0.16"/>
+<circle cx="1105.2" cy="290.7" r="0.9" fill="#e8e0cf" opacity="0.52"/>
+<circle cx="470.2" cy="377.8" r="1.2" fill="#e8e0cf" opacity="0.22"/>
+<circle cx="643.2" cy="283.9" r="0.5" fill="#e8e0cf" opacity="0.42"/>
+<circle cx="464.4" cy="654.3" r="0.7" fill="#e8e0cf" opacity="0.39"/>
+<circle cx="753.8" cy="194.4" r="0.5" fill="#e8e0cf" opacity="0.19"/>
+<circle cx="999.4" cy="373.6" r="0.7" fill="#e8e0cf" opacity="0.33"/>
+<circle cx="999.4" cy="373.6" r="2.8" fill="#d9b779" opacity=".10"/>
+<circle cx="1104.2" cy="495.9" r="1.2" fill="#e8e0cf" opacity="0.24"/>
+<circle cx="292.6" cy="456.5" r="0.5" fill="#e8e0cf" opacity="0.46"/>
+<circle cx="465.9" cy="398.3" r="1.2" fill="#e8e0cf" opacity="0.15"/>
+<circle cx="1120.0" cy="210.4" r="0.9" fill="#e8e0cf" opacity="0.22"/>
+<circle cx="648.5" cy="424.9" r="0.9" fill="#e8e0cf" opacity="0.45"/>
+<circle cx="166.5" cy="381.3" r="1.2" fill="#e8e0cf" opacity="0.23"/>
+<circle cx="682.2" cy="480.4" r="0.5" fill="#e8e0cf" opacity="0.19"/>
+<circle cx="455.8" cy="552.1" r="0.5" fill="#e8e0cf" opacity="0.17"/>
+<circle cx="232.2" cy="487.8" r="0.7" fill="#e8e0cf" opacity="0.28"/>
+<circle cx="352.8" cy="638.4" r="0.5" fill="#e8e0cf" opacity="0.48"/>
+<circle cx="109.7" cy="255.9" r="0.9" fill="#e8e0cf" opacity="0.46"/>
+<circle cx="533.6" cy="597.7" r="0.7" fill="#e8e0cf" opacity="0.34"/>
+<circle cx="770.4" cy="171.8" r="0.7" fill="#e8e0cf" opacity="0.37"/>
+<circle cx="733.4" cy="507.8" r="0.5" fill="#e8e0cf" opacity="0.13"/>
+<circle cx="1024.0" cy="682.4" r="0.5" fill="#e8e0cf" opacity="0.23"/>
+<circle cx="763.8" cy="489.6" r="1.2" fill="#e8e0cf" opacity="0.18"/>
+<circle cx="565.0" cy="267.4" r="0.7" fill="#e8e0cf" opacity="0.28"/>
+<circle cx="218.6" cy="495.5" r="0.9" fill="#e8e0cf" opacity="0.47"/>
+<circle cx="380.0" cy="473.9" r="0.5" fill="#e8e0cf" opacity="0.45"/>
+<circle cx="380.0" cy="473.9" r="2.0" fill="#d9b779" opacity=".10"/>
+<circle cx="943.0" cy="161.2" r="1.2" fill="#e8e0cf" opacity="0.42"/>
+<circle cx="815.9" cy="239.5" r="0.7" fill="#e8e0cf" opacity="0.33"/>
+<circle cx="331.3" cy="359.4" r="0.5" fill="#e8e0cf" opacity="0.39"/>
+<circle cx="979.3" cy="162.6" r="0.9" fill="#e8e0cf" opacity="0.42"/>
+<circle cx="1070.0" cy="509.5" r="1.2" fill="#e8e0cf" opacity="0.39"/>
+<circle cx="865.2" cy="146.9" r="0.7" fill="#e8e0cf" opacity="0.19"/>
+<circle cx="5.4" cy="289.3" r="0.5" fill="#e8e0cf" opacity="0.33"/>
+<circle cx="861.1" cy="534.7" r="0.7" fill="#e8e0cf" opacity="0.40"/>
+<circle cx="636.8" cy="91.6" r="0.9" fill="#e8e0cf" opacity="0.44"/>
+<circle cx="544.3" cy="479.7" r="0.5" fill="#e8e0cf" opacity="0.14"/>
+<circle cx="352.8" cy="594.7" r="1.2" fill="#e8e0cf" opacity="0.19"/>
+<g fill="none" stroke="#8d7448" stroke-width="1" opacity=".8">
+<path d="M28 54V28H54"/><path d="M1146 28H1172V54"/>
+<path d="M28 666V692H54"/><path d="M1146 692H1172V666"/>
+</g>
+<text x="56" y="54" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei','Segoe UI',sans-serif" font-size="11" fill="#d9b779" letter-spacing="3.2" font-weight="400" text-anchor="start">PLATE 06  /  TRACE FORMULA</text>
+<text x="56" y="94" font-family="'Noto Serif SC','Songti SC','STSong','SimSun',Georgia,serif" font-size="28" fill="#e8e0cf" font-weight="400" text-anchor="start" opacity="1">两种计数，一个等式</text>
+<text x="56" y="118" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei','Segoe UI',sans-serif" font-size="10" fill="#8d96a9" letter-spacing="2.2" font-weight="400" text-anchor="start">SPECTRAL SIDE  =  GEOMETRIC SIDE</text>
+<rect x="72" y="180" width="430" height="420" fill="#08111e" fill-opacity=".65" stroke="#78e4dc" stroke-opacity=".25"/>
+<text x="96" y="212" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei','Segoe UI',sans-serif" font-size="9" fill="#78e4dc" letter-spacing="2" font-weight="400" text-anchor="start">SPECTRAL SIDE / 谱侧</text>
+<text x="96" y="252" font-family="'Cambria Math','STIX Two Math','Times New Roman',serif" font-size="18" fill="#e8e0cf">Σ<tspan font-size="11" dy="5">π</tspan><tspan dy="-5"> m(π) f̂(π)</tspan></text>
+<path d="M128 300H267.0" stroke="#78e4dc" stroke-opacity="0.27" stroke-width="1"/>
+<circle cx="267.0" cy="300" r="2" fill="#78e4dc" opacity=".8"/>
+<path d="M128 320H327.7" stroke="#78e4dc" stroke-opacity="0.27" stroke-width="1"/>
+<circle cx="327.7" cy="320" r="2" fill="#78e4dc" opacity=".8"/>
+<path d="M128 340H308.4" stroke="#78e4dc" stroke-opacity="0.71" stroke-width="1"/>
+<circle cx="308.4" cy="340" r="2" fill="#78e4dc" opacity=".8"/>
+<path d="M128 360H263.5" stroke="#78e4dc" stroke-opacity="0.50" stroke-width="1"/>
+<circle cx="263.5" cy="360" r="2" fill="#78e4dc" opacity=".8"/>
+<path d="M128 380H402.9" stroke="#78e4dc" stroke-opacity="0.66" stroke-width="1"/>
+<circle cx="402.9" cy="380" r="2" fill="#78e4dc" opacity=".8"/>
+<path d="M128 400H261.6" stroke="#78e4dc" stroke-opacity="0.71" stroke-width="2"/>
+<circle cx="261.6" cy="400" r="2" fill="#78e4dc" opacity=".8"/>
+<path d="M128 420H409.7" stroke="#78e4dc" stroke-opacity="0.64" stroke-width="1"/>
+<circle cx="409.7" cy="420" r="2" fill="#78e4dc" opacity=".8"/>
+<path d="M128 440H249.2" stroke="#78e4dc" stroke-opacity="0.37" stroke-width="2"/>
+<circle cx="249.2" cy="440" r="2" fill="#78e4dc" opacity=".8"/>
+<path d="M128 460H448.2" stroke="#78e4dc" stroke-opacity="0.67" stroke-width="1"/>
+<circle cx="448.2" cy="460" r="2" fill="#78e4dc" opacity=".8"/>
+<path d="M128 480H229.7" stroke="#78e4dc" stroke-opacity="0.54" stroke-width="2"/>
+<circle cx="229.7" cy="480" r="2" fill="#78e4dc" opacity=".8"/>
+<path d="M128 500H305.0" stroke="#78e4dc" stroke-opacity="0.35" stroke-width="1"/>
+<circle cx="305.0" cy="500" r="2" fill="#78e4dc" opacity=".8"/>
+<path d="M128 520H326.4" stroke="#78e4dc" stroke-opacity="0.27" stroke-width="2"/>
+<circle cx="326.4" cy="520" r="2" fill="#78e4dc" opacity=".8"/>
+<path d="M128 540H418.1" stroke="#78e4dc" stroke-opacity="0.22" stroke-width="1"/>
+<circle cx="418.1" cy="540" r="2" fill="#78e4dc" opacity=".8"/>
+<text x="96" y="570" font-family="'Noto Serif SC','Songti SC','STSong','SimSun',Georgia,serif" font-size="13" fill="#8d96a9">自守谱：每个表示贡献一个权重</text>
+<rect x="698" y="180" width="430" height="420" fill="#08111e" fill-opacity=".65" stroke="#d9b779" stroke-opacity=".25"/>
+<text x="722" y="212" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei','Segoe UI',sans-serif" font-size="9" fill="#d9b779" letter-spacing="2" font-weight="400" text-anchor="start">GEOMETRIC SIDE / 几何侧</text>
+<text x="722" y="252" font-family="'Cambria Math','STIX Two Math','Times New Roman',serif" font-size="18" fill="#e8e0cf">Σ<tspan font-size="11" dy="5">γ</tspan><tspan dy="-5"> vol(G</tspan><tspan font-size="11" dy="5">γ</tspan><tspan dy="-5">) ∫ f</tspan></text>
+<circle cx="800" cy="320" r="22" fill="none" stroke="#d9b779" stroke-opacity=".35"/>
+<circle cx="800" cy="320" r="3.5" fill="#d9b779" opacity=".9"/>
+<circle cx="822.0" cy="320.0" r="1.6" fill="#d9b779" opacity=".55"/>
+<circle cx="806.8" cy="340.9" r="1.6" fill="#d9b779" opacity=".55"/>
+<circle cx="782.2" cy="332.9" r="1.6" fill="#d9b779" opacity=".55"/>
+<circle cx="782.2" cy="307.1" r="1.6" fill="#d9b779" opacity=".55"/>
+<circle cx="806.8" cy="299.1" r="1.6" fill="#d9b779" opacity=".55"/>
+<text x="800" y="358" text-anchor="middle" font-family="'Cambria Math','STIX Two Math','Times New Roman',serif" font-size="10" fill="#8d96a9">γ1</text>
+<circle cx="900" cy="320" r="27" fill="none" stroke="#d9b779" stroke-opacity=".35"/>
+<circle cx="900" cy="320" r="3.5" fill="#d9b779" opacity=".9"/>
+<circle cx="914.6" cy="342.7" r="1.6" fill="#d9b779" opacity=".55"/>
+<circle cx="882.9" cy="340.9" r="1.6" fill="#d9b779" opacity=".55"/>
+<circle cx="874.8" cy="310.2" r="1.6" fill="#d9b779" opacity=".55"/>
+<circle cx="901.6" cy="293.0" r="1.6" fill="#d9b779" opacity=".55"/>
+<circle cx="926.1" cy="313.1" r="1.6" fill="#d9b779" opacity=".55"/>
+<text x="900" y="363" text-anchor="middle" font-family="'Cambria Math','STIX Two Math','Times New Roman',serif" font-size="10" fill="#8d96a9">γ2</text>
+<circle cx="1000" cy="320" r="32" fill="none" stroke="#d9b779" stroke-opacity=".35"/>
+<circle cx="1000" cy="320" r="3.5" fill="#d9b779" opacity=".9"/>
+<circle cx="986.7" cy="349.1" r="1.6" fill="#d9b779" opacity=".55"/>
+<circle cx="968.2" cy="316.3" r="1.6" fill="#d9b779" opacity=".55"/>
+<circle cx="993.7" cy="288.6" r="1.6" fill="#d9b779" opacity=".55"/>
+<circle cx="1027.9" cy="304.3" r="1.6" fill="#d9b779" opacity=".55"/>
+<circle cx="1023.6" cy="341.7" r="1.6" fill="#d9b779" opacity=".55"/>
+<text x="1000" y="368" text-anchor="middle" font-family="'Cambria Math','STIX Two Math','Times New Roman',serif" font-size="10" fill="#8d96a9">γ3</text>
+<circle cx="800" cy="410" r="22" fill="none" stroke="#d9b779" stroke-opacity=".35"/>
+<circle cx="800" cy="410" r="3.5" fill="#d9b779" opacity=".9"/>
+<circle cx="778.2" cy="413.1" r="1.6" fill="#d9b779" opacity=".55"/>
+<circle cx="790.3" cy="390.2" r="1.6" fill="#d9b779" opacity=".55"/>
+<circle cx="815.8" cy="394.7" r="1.6" fill="#d9b779" opacity=".55"/>
+<circle cx="819.4" cy="420.3" r="1.6" fill="#d9b779" opacity=".55"/>
+<circle cx="796.2" cy="431.7" r="1.6" fill="#d9b779" opacity=".55"/>
+<text x="800" y="448" text-anchor="middle" font-family="'Cambria Math','STIX Two Math','Times New Roman',serif" font-size="10" fill="#8d96a9">γ4</text>
+<circle cx="900" cy="410" r="27" fill="none" stroke="#d9b779" stroke-opacity=".35"/>
+<circle cx="900" cy="410" r="3.5" fill="#d9b779" opacity=".9"/>
+<circle cx="882.4" cy="389.6" r="1.6" fill="#d9b779" opacity=".55"/>
+<circle cx="914.0" cy="386.9" r="1.6" fill="#d9b779" opacity=".55"/>
+<circle cx="926.3" cy="416.2" r="1.6" fill="#d9b779" opacity=".55"/>
+<circle cx="902.3" cy="436.9" r="1.6" fill="#d9b779" opacity=".55"/>
+<circle cx="875.1" cy="420.5" r="1.6" fill="#d9b779" opacity=".55"/>
+<text x="900" y="453" text-anchor="middle" font-family="'Cambria Math','STIX Two Math','Times New Roman',serif" font-size="10" fill="#8d96a9">γ5</text>
+<circle cx="1000" cy="410" r="32" fill="none" stroke="#d9b779" stroke-opacity=".35"/>
+<circle cx="1000" cy="410" r="3.5" fill="#d9b779" opacity=".9"/>
+<circle cx="1009.1" cy="379.3" r="1.6" fill="#d9b779" opacity=".55"/>
+<circle cx="1032.0" cy="409.2" r="1.6" fill="#d9b779" opacity=".55"/>
+<circle cx="1010.7" cy="440.2" r="1.6" fill="#d9b779" opacity=".55"/>
+<circle cx="974.6" cy="429.5" r="1.6" fill="#d9b779" opacity=".55"/>
+<circle cx="973.6" cy="391.9" r="1.6" fill="#d9b779" opacity=".55"/>
+<text x="1000" y="458" text-anchor="middle" font-family="'Cambria Math','STIX Two Math','Times New Roman',serif" font-size="10" fill="#8d96a9">γ6</text>
+<circle cx="800" cy="500" r="22" fill="none" stroke="#d9b779" stroke-opacity=".35"/>
+<circle cx="800" cy="500" r="3.5" fill="#d9b779" opacity=".9"/>
+<circle cx="821.1" cy="493.9" r="1.6" fill="#d9b779" opacity=".55"/>
+<circle cx="812.4" cy="518.2" r="1.6" fill="#d9b779" opacity=".55"/>
+<circle cx="786.5" cy="517.4" r="1.6" fill="#d9b779" opacity=".55"/>
+<circle cx="779.3" cy="492.6" r="1.6" fill="#d9b779" opacity=".55"/>
+<circle cx="800.7" cy="478.0" r="1.6" fill="#d9b779" opacity=".55"/>
+<text x="800" y="538" text-anchor="middle" font-family="'Cambria Math','STIX Two Math','Times New Roman',serif" font-size="10" fill="#8d96a9">γ7</text>
+<text x="722" y="570" font-family="'Noto Serif SC','Songti SC','STSong','SimSun',Georgia,serif" font-size="13" fill="#8d96a9">轨道积分：每个共轭类贡献一个体积</text>
+<circle cx="600" cy="390" r="52" fill="#050811" stroke="#d9b779" stroke-opacity=".45"/>
+<text x="600" y="407" text-anchor="middle" font-family="'Cambria Math','STIX Two Math','Times New Roman',serif" font-size="46" fill="#d9b779">=</text>
+<path d="M502 390H548M652 390H698" stroke="#d9b779" stroke-opacity=".4" stroke-dasharray="2 4"/>
+<rect x="72" y="626" width="1056" height="54" fill="#08111e" stroke="#d9b779" stroke-opacity=".28"/>
+<text x="600" y="659" text-anchor="middle" font-family="'Cambria Math','STIX Two Math','Times New Roman',serif" font-size="19" fill="#e8e0cf">Σ<tspan font-size="11" dy="5">π</tspan><tspan dy="-5"> m(π) f̂(π)  =  Σ</tspan><tspan font-size="11" dy="5">γ</tspan><tspan dy="-5"> vol(G</tspan><tspan font-size="11" dy="5">γ</tspan><tspan dy="-5">) ∫</tspan><tspan font-size="11" dy="5">Gγ\G</tspan><tspan dy="-5"> f(g) dg</tspan></text>
+<text x="56" y="704" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei','Segoe UI',sans-serif" font-size="9" fill="#8d96a9" letter-spacing="1.2" font-weight="400" text-anchor="start">简化形式；稳定化、内窥分类与基本引理是让等式“可比较”的关键技术。</text>
+</svg>

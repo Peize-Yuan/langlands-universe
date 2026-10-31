@@ -1,0 +1,10 @@
+# Deployment secrets — never commit these
+.gh-token
+.cf-token
+
+# Local QA artifacts
+.chrome-profile/
+assets/_preview/
+tools/deploy-result.txt
+tools/deploy-github.ps1
+tools/deploy-api.ps1

@@ -1,0 +1,239 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" width="1200" height="720" role="img" aria-labelledby="title desc">
+<title id="title">L-函数与临界带</title>
+<desc id="desc">欧拉乘积、解析延拓与临界线上的零点示意</desc>
+
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#050811"/>
+    <stop offset=".52" stop-color="#07101d"/>
+    <stop offset="1" stop-color="#0a0a18"/>
+  </linearGradient>
+  <radialGradient id="halo" cx="50%" cy="46%" r="58%">
+    <stop offset="0" stop-color="#d9b779" stop-opacity=".16"/>
+    <stop offset=".45" stop-color="#d9b779" stop-opacity=".05"/>
+    <stop offset="1" stop-color="#d9b779" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="goldglow" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#d9b779" stop-opacity=".9"/>
+    <stop offset=".18" stop-color="#d9b779" stop-opacity=".38"/>
+    <stop offset="1" stop-color="#d9b779" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="goldline" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#d9b779" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#d9b779" stop-opacity=".9"/>
+    <stop offset="1" stop-color="#d9b779" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+    <feGaussianBlur stdDeviation="5" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="tinyglow" x="-80%" y="-80%" width="260%" height="260%">
+    <feGaussianBlur stdDeviation="2" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <pattern id="microgrid" width="24" height="24" patternUnits="userSpaceOnUse">
+    <path d="M24 0H0V24" fill="none" stroke="#b9c7dd" stroke-opacity=".055" stroke-width=".6"/>
+  </pattern>
+  <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="7" stroke="#f28fbe" stroke-opacity=".18" stroke-width="1"/>
+  </pattern>
+  <clipPath id="frame"><rect x="0" y="0" width="1200" height="720"/></clipPath>
+</defs>
+<rect width="1200" height="720" fill="url(#bg)"/>
+<rect width="1200" height="720" fill="url(#halo)"/>
+<rect width="1200" height="720" fill="url(#microgrid)" clip-path="url(#frame)"/>
+<circle cx="490.2" cy="390.2" r="0.5" fill="#e8e0cf" opacity="0.20"/>
+<circle cx="34.9" cy="84.0" r="0.5" fill="#e8e0cf" opacity="0.16"/>
+<circle cx="826.6" cy="218.1" r="0.9" fill="#e8e0cf" opacity="0.37"/>
+<circle cx="804.0" cy="258.0" r="0.7" fill="#e8e0cf" opacity="0.48"/>
+<circle cx="134.4" cy="50.4" r="0.5" fill="#e8e0cf" opacity="0.24"/>
+<circle cx="1131.7" cy="591.7" r="0.7" fill="#e8e0cf" opacity="0.14"/>
+<circle cx="572.7" cy="660.2" r="0.5" fill="#e8e0cf" opacity="0.18"/>
+<circle cx="931.9" cy="31.3" r="0.9" fill="#e8e0cf" opacity="0.43"/>
+<circle cx="833.7" cy="608.0" r="0.7" fill="#e8e0cf" opacity="0.28"/>
+<circle cx="544.4" cy="577.4" r="0.5" fill="#e8e0cf" opacity="0.22"/>
+<circle cx="952.9" cy="492.3" r="0.7" fill="#e8e0cf" opacity="0.38"/>
+<circle cx="885.1" cy="200.1" r="0.5" fill="#e8e0cf" opacity="0.22"/>
+<circle cx="885.1" cy="200.1" r="2.0" fill="#d9b779" opacity=".10"/>
+<circle cx="904.1" cy="465.7" r="1.2" fill="#e8e0cf" opacity="0.24"/>
+<circle cx="676.2" cy="291.3" r="0.7" fill="#e8e0cf" opacity="0.27"/>
+<circle cx="728.1" cy="42.7" r="0.9" fill="#e8e0cf" opacity="0.45"/>
+<circle cx="568.7" cy="102.7" r="0.5" fill="#e8e0cf" opacity="0.39"/>
+<circle cx="774.4" cy="195.9" r="0.5" fill="#e8e0cf" opacity="0.31"/>
+<circle cx="628.4" cy="488.3" r="0.5" fill="#e8e0cf" opacity="0.24"/>
+<circle cx="315.1" cy="46.7" r="1.2" fill="#e8e0cf" opacity="0.44"/>
+<circle cx="395.9" cy="574.3" r="0.5" fill="#e8e0cf" opacity="0.24"/>
+<circle cx="483.7" cy="393.9" r="0.9" fill="#e8e0cf" opacity="0.15"/>
+<circle cx="1132.2" cy="473.3" r="0.5" fill="#e8e0cf" opacity="0.52"/>
+<circle cx="414.2" cy="319.3" r="0.7" fill="#e8e0cf" opacity="0.51"/>
+<circle cx="334.3" cy="384.1" r="0.7" fill="#e8e0cf" opacity="0.22"/>
+<circle cx="672.1" cy="52.6" r="0.7" fill="#e8e0cf" opacity="0.49"/>
+<circle cx="1187.0" cy="325.9" r="0.5" fill="#e8e0cf" opacity="0.22"/>
+<circle cx="633.1" cy="229.8" r="0.7" fill="#e8e0cf" opacity="0.51"/>
+<circle cx="5.7" cy="658.7" r="0.9" fill="#e8e0cf" opacity="0.52"/>
+<circle cx="963.2" cy="275.1" r="1.2" fill="#e8e0cf" opacity="0.31"/>
+<circle cx="829.8" cy="529.8" r="0.5" fill="#e8e0cf" opacity="0.26"/>
+<circle cx="829.8" cy="529.8" r="2.0" fill="#d9b779" opacity=".10"/>
+<circle cx="836.6" cy="437.6" r="0.5" fill="#e8e0cf" opacity="0.20"/>
+<circle cx="836.6" cy="437.6" r="2.0" fill="#d9b779" opacity=".10"/>
+<circle cx="144.8" cy="281.8" r="1.2" fill="#e8e0cf" opacity="0.14"/>
+<circle cx="483.4" cy="202.3" r="0.5" fill="#e8e0cf" opacity="0.41"/>
+<circle cx="386.2" cy="427.5" r="0.7" fill="#e8e0cf" opacity="0.54"/>
+<circle cx="346.5" cy="24.6" r="0.5" fill="#e8e0cf" opacity="0.17"/>
+<circle cx="346.5" cy="24.6" r="2.0" fill="#d9b779" opacity=".10"/>
+<circle cx="90.3" cy="404.9" r="0.5" fill="#e8e0cf" opacity="0.51"/>
+<circle cx="327.6" cy="272.1" r="0.7" fill="#e8e0cf" opacity="0.23"/>
+<circle cx="178.8" cy="189.6" r="0.9" fill="#e8e0cf" opacity="0.45"/>
+<circle cx="1137.4" cy="345.7" r="0.7" fill="#e8e0cf" opacity="0.31"/>
+<circle cx="566.8" cy="568.1" r="1.2" fill="#e8e0cf" opacity="0.50"/>
+<circle cx="453.5" cy="329.5" r="0.7" fill="#e8e0cf" opacity="0.37"/>
+<circle cx="270.0" cy="642.9" r="0.5" fill="#e8e0cf" opacity="0.27"/>
+<circle cx="509.5" cy="220.4" r="0.7" fill="#e8e0cf" opacity="0.35"/>
+<circle cx="116.8" cy="165.9" r="1.2" fill="#e8e0cf" opacity="0.25"/>
+<circle cx="765.5" cy="478.5" r="0.7" fill="#e8e0cf" opacity="0.40"/>
+<circle cx="1110.4" cy="319.4" r="0.5" fill="#e8e0cf" opacity="0.37"/>
+<circle cx="201.7" cy="160.2" r="1.2" fill="#e8e0cf" opacity="0.27"/>
+<circle cx="1131.2" cy="121.7" r="0.9" fill="#e8e0cf" opacity="0.14"/>
+<circle cx="371.8" cy="87.1" r="0.9" fill="#e8e0cf" opacity="0.23"/>
+<circle cx="637.0" cy="257.7" r="0.5" fill="#e8e0cf" opacity="0.14"/>
+<circle cx="855.5" cy="244.5" r="0.9" fill="#e8e0cf" opacity="0.17"/>
+<circle cx="538.8" cy="623.1" r="1.2" fill="#e8e0cf" opacity="0.33"/>
+<circle cx="468.9" cy="596.3" r="1.2" fill="#e8e0cf" opacity="0.39"/>
+<circle cx="955.9" cy="558.8" r="1.2" fill="#e8e0cf" opacity="0.37"/>
+<circle cx="831.0" cy="279.9" r="1.2" fill="#e8e0cf" opacity="0.34"/>
+<circle cx="257.1" cy="55.2" r="0.9" fill="#e8e0cf" opacity="0.17"/>
+<circle cx="1102.4" cy="149.6" r="0.7" fill="#e8e0cf" opacity="0.50"/>
+<circle cx="968.2" cy="668.8" r="0.7" fill="#e8e0cf" opacity="0.16"/>
+<circle cx="835.3" cy="19.1" r="0.5" fill="#e8e0cf" opacity="0.30"/>
+<circle cx="538.6" cy="98.7" r="0.9" fill="#e8e0cf" opacity="0.23"/>
+<circle cx="682.5" cy="307.3" r="0.9" fill="#e8e0cf" opacity="0.48"/>
+<circle cx="468.8" cy="337.2" r="1.2" fill="#e8e0cf" opacity="0.35"/>
+<circle cx="191.0" cy="30.3" r="0.9" fill="#e8e0cf" opacity="0.43"/>
+<circle cx="1155.0" cy="220.6" r="0.7" fill="#e8e0cf" opacity="0.36"/>
+<circle cx="255.3" cy="8.9" r="0.5" fill="#e8e0cf" opacity="0.54"/>
+<circle cx="286.9" cy="687.2" r="0.5" fill="#e8e0cf" opacity="0.26"/>
+<circle cx="26.7" cy="62.1" r="0.9" fill="#e8e0cf" opacity="0.36"/>
+<circle cx="288.5" cy="605.4" r="1.2" fill="#e8e0cf" opacity="0.50"/>
+<circle cx="1101.4" cy="409.4" r="0.5" fill="#e8e0cf" opacity="0.55"/>
+<circle cx="761.0" cy="629.8" r="1.2" fill="#e8e0cf" opacity="0.29"/>
+<circle cx="446.9" cy="56.2" r="0.5" fill="#e8e0cf" opacity="0.45"/>
+<circle cx="658.7" cy="375.3" r="0.9" fill="#e8e0cf" opacity="0.36"/>
+<circle cx="1073.5" cy="359.2" r="0.5" fill="#e8e0cf" opacity="0.13"/>
+<circle cx="588.6" cy="465.4" r="0.9" fill="#e8e0cf" opacity="0.13"/>
+<circle cx="82.0" cy="225.7" r="0.7" fill="#e8e0cf" opacity="0.13"/>
+<circle cx="866.8" cy="452.1" r="0.7" fill="#e8e0cf" opacity="0.53"/>
+<circle cx="39.1" cy="128.1" r="0.9" fill="#e8e0cf" opacity="0.49"/>
+<circle cx="631.7" cy="600.7" r="0.5" fill="#e8e0cf" opacity="0.30"/>
+<circle cx="138.9" cy="456.4" r="0.9" fill="#e8e0cf" opacity="0.31"/>
+<circle cx="291.2" cy="228.4" r="0.7" fill="#e8e0cf" opacity="0.29"/>
+<circle cx="183.1" cy="523.2" r="0.9" fill="#e8e0cf" opacity="0.25"/>
+<circle cx="692.1" cy="171.7" r="0.9" fill="#e8e0cf" opacity="0.24"/>
+<circle cx="1152.1" cy="71.6" r="0.5" fill="#e8e0cf" opacity="0.39"/>
+<circle cx="807.6" cy="669.8" r="0.5" fill="#e8e0cf" opacity="0.34"/>
+<circle cx="175.9" cy="56.3" r="0.5" fill="#e8e0cf" opacity="0.14"/>
+<circle cx="305.6" cy="7.7" r="0.7" fill="#e8e0cf" opacity="0.51"/>
+<circle cx="237.8" cy="448.7" r="1.2" fill="#e8e0cf" opacity="0.22"/>
+<circle cx="42.7" cy="87.4" r="0.7" fill="#e8e0cf" opacity="0.32"/>
+<circle cx="877.1" cy="530.4" r="0.7" fill="#e8e0cf" opacity="0.28"/>
+<circle cx="974.7" cy="677.0" r="0.5" fill="#e8e0cf" opacity="0.33"/>
+<circle cx="288.8" cy="194.1" r="0.7" fill="#e8e0cf" opacity="0.30"/>
+<circle cx="533.0" cy="600.7" r="0.7" fill="#e8e0cf" opacity="0.13"/>
+<circle cx="438.6" cy="121.8" r="0.5" fill="#e8e0cf" opacity="0.27"/>
+<circle cx="37.8" cy="68.0" r="0.5" fill="#e8e0cf" opacity="0.40"/>
+<circle cx="707.6" cy="572.0" r="0.5" fill="#e8e0cf" opacity="0.29"/>
+<circle cx="973.8" cy="608.1" r="0.5" fill="#e8e0cf" opacity="0.51"/>
+<circle cx="1158.0" cy="62.4" r="0.5" fill="#e8e0cf" opacity="0.21"/>
+<circle cx="936.8" cy="480.1" r="0.5" fill="#e8e0cf" opacity="0.23"/>
+<circle cx="1162.4" cy="622.8" r="1.2" fill="#e8e0cf" opacity="0.42"/>
+<circle cx="777.8" cy="196.2" r="0.5" fill="#e8e0cf" opacity="0.18"/>
+<circle cx="498.2" cy="678.0" r="0.5" fill="#e8e0cf" opacity="0.17"/>
+<circle cx="312.8" cy="668.4" r="0.5" fill="#e8e0cf" opacity="0.47"/>
+<circle cx="124.1" cy="596.5" r="0.9" fill="#e8e0cf" opacity="0.49"/>
+<circle cx="866.4" cy="613.4" r="1.2" fill="#e8e0cf" opacity="0.14"/>
+<circle cx="69.6" cy="207.4" r="1.2" fill="#e8e0cf" opacity="0.44"/>
+<circle cx="284.3" cy="122.5" r="1.2" fill="#e8e0cf" opacity="0.45"/>
+<circle cx="305.2" cy="134.0" r="0.5" fill="#e8e0cf" opacity="0.43"/>
+<circle cx="739.2" cy="104.5" r="0.5" fill="#e8e0cf" opacity="0.14"/>
+<circle cx="739.2" cy="104.5" r="2.0" fill="#d9b779" opacity=".10"/>
+<circle cx="357.9" cy="268.7" r="0.9" fill="#e8e0cf" opacity="0.44"/>
+<circle cx="688.5" cy="299.4" r="1.2" fill="#e8e0cf" opacity="0.39"/>
+<circle cx="1122.6" cy="587.2" r="0.9" fill="#e8e0cf" opacity="0.13"/>
+<circle cx="1005.5" cy="288.6" r="0.9" fill="#e8e0cf" opacity="0.44"/>
+<circle cx="496.2" cy="294.4" r="0.9" fill="#e8e0cf" opacity="0.43"/>
+<circle cx="190.9" cy="628.8" r="0.9" fill="#e8e0cf" opacity="0.51"/>
+<circle cx="956.0" cy="124.7" r="1.2" fill="#e8e0cf" opacity="0.34"/>
+<circle cx="837.5" cy="699.1" r="0.5" fill="#e8e0cf" opacity="0.39"/>
+<circle cx="1094.7" cy="367.9" r="0.7" fill="#e8e0cf" opacity="0.36"/>
+<circle cx="968.3" cy="653.3" r="1.2" fill="#e8e0cf" opacity="0.21"/>
+<circle cx="852.9" cy="133.2" r="0.7" fill="#e8e0cf" opacity="0.48"/>
+<circle cx="980.9" cy="714.3" r="0.9" fill="#e8e0cf" opacity="0.27"/>
+<circle cx="980.9" cy="714.3" r="3.6" fill="#d9b779" opacity=".10"/>
+<g fill="none" stroke="#8d7448" stroke-width="1" opacity=".8">
+<path d="M28 54V28H54"/><path d="M1146 28H1172V54"/>
+<path d="M28 666V692H54"/><path d="M1146 692H1172V666"/>
+</g>
+<text x="56" y="54" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei','Segoe UI',sans-serif" font-size="11" fill="#d9b779" letter-spacing="3.2" font-weight="400" text-anchor="start">PLATE 04  /  L-FUNCTIONS</text>
+<text x="56" y="94" font-family="'Noto Serif SC','Songti SC','STSong','SimSun',Georgia,serif" font-size="28" fill="#e8e0cf" font-weight="400" text-anchor="start" opacity="1">宇宙的指纹</text>
+<text x="56" y="118" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei','Segoe UI',sans-serif" font-size="10" fill="#8d96a9" letter-spacing="2.2" font-weight="400" text-anchor="start">EULER PRODUCT  ·  ANALYTIC CONTINUATION  ·  ZEROS</text>
+<path d="M150 590H690M150 590V180" stroke="#e8e0cf" stroke-opacity=".35"/>
+<text x="700" y="594" font-family="'Cambria Math','STIX Two Math','Times New Roman',serif" font-size="16" fill="#8d96a9">Re(s)</text>
+<text x="140" y="170" font-family="'Cambria Math','STIX Two Math','Times New Roman',serif" font-size="16" fill="#8d96a9" text-anchor="end">Im(s)</text>
+<rect x="420" y="190" width="150" height="400" fill="#d9b779" fill-opacity=".045" stroke="#d9b779" stroke-opacity=".22"/>
+<path d="M495 190V590" stroke="#d9b779" stroke-opacity=".7" stroke-dasharray="4 4"/>
+<text x="495" y="620" text-anchor="middle" font-family="'Cambria Math','STIX Two Math','Times New Roman',serif" font-size="13" fill="#d9b779">Re(s) = 1/2</text>
+<text x="420" y="176" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei','Segoe UI',sans-serif" font-size="9" fill="#8d96a9" letter-spacing="1.5">CRITICAL STRIP</text>
+<circle cx="494.1" cy="559.4" r="3" fill="#d9b779" opacity=".95"/>
+<circle cx="494.1" cy="559.4" r="9" fill="none" stroke="#d9b779" stroke-opacity=".18"/>
+<circle cx="494.4" cy="539.5" r="3" fill="#d9b779" opacity=".95"/>
+<circle cx="494.4" cy="539.5" r="9" fill="none" stroke="#d9b779" stroke-opacity=".18"/>
+<circle cx="494.8" cy="518.1" r="3" fill="#d9b779" opacity=".95"/>
+<circle cx="494.8" cy="518.1" r="9" fill="none" stroke="#d9b779" stroke-opacity=".18"/>
+<circle cx="495.0" cy="495.4" r="3" fill="#d9b779" opacity=".95"/>
+<circle cx="495.0" cy="495.4" r="9" fill="none" stroke="#d9b779" stroke-opacity=".18"/>
+<circle cx="494.9" cy="474.3" r="3" fill="#d9b779" opacity=".95"/>
+<circle cx="494.9" cy="474.3" r="9" fill="none" stroke="#d9b779" stroke-opacity=".18"/>
+<circle cx="494.4" cy="453.5" r="3" fill="#d9b779" opacity=".95"/>
+<circle cx="494.4" cy="453.5" r="9" fill="none" stroke="#d9b779" stroke-opacity=".18"/>
+<circle cx="495.5" cy="433.7" r="3" fill="#d9b779" opacity=".95"/>
+<circle cx="495.5" cy="433.7" r="9" fill="none" stroke="#d9b779" stroke-opacity=".18"/>
+<circle cx="494.6" cy="411.6" r="3" fill="#d9b779" opacity=".95"/>
+<circle cx="494.6" cy="411.6" r="9" fill="none" stroke="#d9b779" stroke-opacity=".18"/>
+<circle cx="495.6" cy="392.5" r="3" fill="#d9b779" opacity=".95"/>
+<circle cx="495.6" cy="392.5" r="9" fill="none" stroke="#d9b779" stroke-opacity=".18"/>
+<circle cx="494.9" cy="371.3" r="3" fill="#d9b779" opacity=".95"/>
+<circle cx="494.9" cy="371.3" r="9" fill="none" stroke="#d9b779" stroke-opacity=".18"/>
+<circle cx="494.3" cy="351.7" r="3" fill="#d9b779" opacity=".95"/>
+<circle cx="494.3" cy="351.7" r="9" fill="none" stroke="#d9b779" stroke-opacity=".18"/>
+<circle cx="494.7" cy="330.3" r="3" fill="#d9b779" opacity=".95"/>
+<circle cx="494.7" cy="330.3" r="9" fill="none" stroke="#d9b779" stroke-opacity=".18"/>
+<circle cx="494.4" cy="306.7" r="3" fill="#d9b779" opacity=".95"/>
+<circle cx="494.4" cy="306.7" r="9" fill="none" stroke="#d9b779" stroke-opacity=".18"/>
+<circle cx="495.5" cy="286.3" r="3" fill="#d9b779" opacity=".95"/>
+<circle cx="495.5" cy="286.3" r="9" fill="none" stroke="#d9b779" stroke-opacity=".18"/>
+<circle cx="495.1" cy="264.9" r="3" fill="#d9b779" opacity=".95"/>
+<circle cx="495.1" cy="264.9" r="9" fill="none" stroke="#d9b779" stroke-opacity=".18"/>
+<circle cx="494.8" cy="245.5" r="3" fill="#d9b779" opacity=".95"/>
+<circle cx="494.8" cy="245.5" r="9" fill="none" stroke="#d9b779" stroke-opacity=".18"/>
+<circle cx="494.4" cy="224.2" r="3" fill="#d9b779" opacity=".95"/>
+<circle cx="494.4" cy="224.2" r="9" fill="none" stroke="#d9b779" stroke-opacity=".18"/>
+<circle cx="494.6" cy="201.4" r="3" fill="#d9b779" opacity=".95"/>
+<circle cx="494.6" cy="201.4" r="9" fill="none" stroke="#d9b779" stroke-opacity=".18"/>
+<text x="210" y="612" text-anchor="middle" font-family="'Cambria Math','STIX Two Math','Times New Roman',serif" font-size="12" fill="#8d96a9">-2</text>
+<text x="300" y="612" text-anchor="middle" font-family="'Cambria Math','STIX Two Math','Times New Roman',serif" font-size="12" fill="#8d96a9">0</text>
+<text x="570" y="612" text-anchor="middle" font-family="'Cambria Math','STIX Two Math','Times New Roman',serif" font-size="12" fill="#8d96a9">1</text>
+<path d="M150 190H690" stroke="#e8e0cf" stroke-opacity=".08"/>
+<rect x="760" y="190" width="380" height="92" fill="#08111e" stroke="#d9b779" stroke-opacity=".3"/>
+<text x="782" y="215" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei','Segoe UI',sans-serif" font-size="9" fill="#d9b779" letter-spacing="2" font-weight="400" text-anchor="start">EULER PRODUCT</text>
+<text x="782" y="248" font-family="'Cambria Math','STIX Two Math','Times New Roman',serif" font-size="17" fill="#e8e0cf">L(s,π) = ∏<tspan font-size="11" dy="4">p</tspan><tspan dy="-4"> (1 − α</tspan><tspan font-size="11" dy="4">p</tspan><tspan dy="-4"> p</tspan><tspan font-size="11" dy="-7">−s</tspan><tspan dy="7">)</tspan><tspan font-size="11" dy="-7">−1</tspan></text>
+<rect x="760" y="300" width="380" height="92" fill="#08111e" stroke="#78e4dc" stroke-opacity=".3"/>
+<text x="782" y="325" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei','Segoe UI',sans-serif" font-size="9" fill="#78e4dc" letter-spacing="2" font-weight="400" text-anchor="start">FUNCTIONAL EQUATION</text>
+<text x="782" y="360" font-family="'Cambria Math','STIX Two Math','Times New Roman',serif" font-size="16" fill="#e8e0cf">Λ(s,π) = ω · Λ(1−s, π̃)</text>
+<rect x="760" y="410" width="380" height="92" fill="#08111e" stroke="#a595ff" stroke-opacity=".3"/>
+<text x="782" y="435" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei','Segoe UI',sans-serif" font-size="9" fill="#a595ff" letter-spacing="2" font-weight="400" text-anchor="start">THE DREAM</text>
+<text x="782" y="470" font-family="'Noto Serif SC','Songti SC','STSong','SimSun',Georgia,serif" font-size="17" fill="#e8e0cf">所有零点都在临界线上？</text>
+<text x="782" y="492" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei','Segoe UI',sans-serif" font-size="9" fill="#8d96a9" letter-spacing="1">广义黎曼猜想：一个仍未攻克的统一命题</text>
+<rect x="760" y="524" width="380" height="76" fill="none" stroke="#8d96a9" stroke-opacity=".25" stroke-dasharray="3 5"/>
+<text x="778" y="550" font-family="'Noto Serif SC','Songti SC','STSong','SimSun',Georgia,serif" font-size="13" fill="#e8e0cf" opacity=".8">局部因子 ← 表示论</text>
+<text x="778" y="575" font-family="'Noto Serif SC','Songti SC','STSong','SimSun',Georgia,serif" font-size="13" fill="#e8e0cf" opacity=".8">整体函数 ← 解析延拓 + 函数方程</text>
+<text x="56" y="690" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei','Segoe UI',sans-serif" font-size="9" fill="#8d96a9" letter-spacing="1.2" font-weight="400" text-anchor="start">零点的分布为示意；真正的 L-函数计算需要大量数值与严格误差控制。</text>
+</svg>

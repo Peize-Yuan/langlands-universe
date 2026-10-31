@@ -1,0 +1,259 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760" role="img" aria-labelledby="title desc">
+<title id="title">朗兰兹地图</title>
+<desc id="desc">局部、全局、函数域与几何朗兰兹之间的海域</desc>
+
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#050811"/>
+    <stop offset=".52" stop-color="#07101d"/>
+    <stop offset="1" stop-color="#0a0a18"/>
+  </linearGradient>
+  <radialGradient id="halo" cx="50%" cy="46%" r="58%">
+    <stop offset="0" stop-color="#78e4dc" stop-opacity=".16"/>
+    <stop offset=".45" stop-color="#78e4dc" stop-opacity=".05"/>
+    <stop offset="1" stop-color="#78e4dc" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="goldglow" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#d9b779" stop-opacity=".9"/>
+    <stop offset=".18" stop-color="#d9b779" stop-opacity=".38"/>
+    <stop offset="1" stop-color="#d9b779" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="goldline" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#d9b779" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#d9b779" stop-opacity=".9"/>
+    <stop offset="1" stop-color="#d9b779" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+    <feGaussianBlur stdDeviation="5" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="tinyglow" x="-80%" y="-80%" width="260%" height="260%">
+    <feGaussianBlur stdDeviation="2" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <pattern id="microgrid" width="24" height="24" patternUnits="userSpaceOnUse">
+    <path d="M24 0H0V24" fill="none" stroke="#b9c7dd" stroke-opacity=".055" stroke-width=".6"/>
+  </pattern>
+  <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="7" stroke="#f28fbe" stroke-opacity=".18" stroke-width="1"/>
+  </pattern>
+  <clipPath id="frame"><rect x="0" y="0" width="1200" height="760"/></clipPath>
+</defs>
+<rect width="1200" height="760" fill="url(#bg)"/>
+<rect width="1200" height="760" fill="url(#halo)"/>
+<rect width="1200" height="760" fill="url(#microgrid)" clip-path="url(#frame)"/>
+<circle cx="108.4" cy="722.5" r="0.5" fill="#e8e0cf" opacity="0.55"/>
+<circle cx="95.6" cy="139.7" r="0.5" fill="#e8e0cf" opacity="0.27"/>
+<circle cx="1158.8" cy="503.6" r="1.2" fill="#e8e0cf" opacity="0.29"/>
+<circle cx="381.9" cy="723.8" r="1.2" fill="#e8e0cf" opacity="0.45"/>
+<circle cx="308.7" cy="727.3" r="1.2" fill="#e8e0cf" opacity="0.42"/>
+<circle cx="1005.5" cy="39.9" r="0.5" fill="#e8e0cf" opacity="0.16"/>
+<circle cx="513.9" cy="172.2" r="0.5" fill="#e8e0cf" opacity="0.30"/>
+<circle cx="995.3" cy="81.4" r="0.9" fill="#e8e0cf" opacity="0.25"/>
+<circle cx="243.7" cy="355.7" r="0.5" fill="#e8e0cf" opacity="0.22"/>
+<circle cx="528.3" cy="229.3" r="0.5" fill="#e8e0cf" opacity="0.48"/>
+<circle cx="990.8" cy="445.3" r="0.5" fill="#e8e0cf" opacity="0.29"/>
+<circle cx="94.6" cy="42.6" r="0.7" fill="#e8e0cf" opacity="0.25"/>
+<circle cx="100.7" cy="314.8" r="0.9" fill="#e8e0cf" opacity="0.33"/>
+<circle cx="314.6" cy="270.0" r="0.7" fill="#e8e0cf" opacity="0.22"/>
+<circle cx="566.9" cy="132.5" r="0.7" fill="#e8e0cf" opacity="0.14"/>
+<circle cx="764.3" cy="756.9" r="0.9" fill="#e8e0cf" opacity="0.26"/>
+<circle cx="1082.0" cy="3.0" r="0.7" fill="#e8e0cf" opacity="0.43"/>
+<circle cx="393.0" cy="403.4" r="1.2" fill="#e8e0cf" opacity="0.29"/>
+<circle cx="250.3" cy="714.0" r="0.5" fill="#e8e0cf" opacity="0.20"/>
+<circle cx="1190.0" cy="263.0" r="1.2" fill="#e8e0cf" opacity="0.40"/>
+<circle cx="1190.0" cy="263.0" r="4.8" fill="#d9b779" opacity=".10"/>
+<circle cx="1182.3" cy="424.3" r="1.2" fill="#e8e0cf" opacity="0.34"/>
+<circle cx="253.5" cy="508.3" r="0.5" fill="#e8e0cf" opacity="0.30"/>
+<circle cx="1036.5" cy="603.5" r="0.5" fill="#e8e0cf" opacity="0.43"/>
+<circle cx="969.3" cy="361.7" r="0.5" fill="#e8e0cf" opacity="0.46"/>
+<circle cx="969.3" cy="361.7" r="2.0" fill="#d9b779" opacity=".10"/>
+<circle cx="526.2" cy="70.9" r="0.7" fill="#e8e0cf" opacity="0.30"/>
+<circle cx="1041.7" cy="247.3" r="0.5" fill="#e8e0cf" opacity="0.48"/>
+<circle cx="176.8" cy="68.9" r="1.2" fill="#e8e0cf" opacity="0.43"/>
+<circle cx="983.7" cy="204.9" r="0.7" fill="#e8e0cf" opacity="0.14"/>
+<circle cx="764.2" cy="52.8" r="1.2" fill="#e8e0cf" opacity="0.44"/>
+<circle cx="606.4" cy="61.8" r="0.7" fill="#e8e0cf" opacity="0.30"/>
+<circle cx="983.3" cy="381.9" r="0.5" fill="#e8e0cf" opacity="0.23"/>
+<circle cx="685.7" cy="467.5" r="0.7" fill="#e8e0cf" opacity="0.35"/>
+<circle cx="601.0" cy="203.2" r="0.5" fill="#e8e0cf" opacity="0.29"/>
+<circle cx="382.0" cy="92.4" r="1.2" fill="#e8e0cf" opacity="0.17"/>
+<circle cx="760.9" cy="727.7" r="0.7" fill="#e8e0cf" opacity="0.15"/>
+<circle cx="1039.2" cy="752.5" r="0.5" fill="#e8e0cf" opacity="0.33"/>
+<circle cx="535.8" cy="21.0" r="0.9" fill="#e8e0cf" opacity="0.15"/>
+<circle cx="966.7" cy="301.3" r="0.7" fill="#e8e0cf" opacity="0.46"/>
+<circle cx="86.6" cy="49.9" r="1.2" fill="#e8e0cf" opacity="0.47"/>
+<circle cx="124.9" cy="230.3" r="0.7" fill="#e8e0cf" opacity="0.21"/>
+<circle cx="1123.3" cy="724.1" r="0.9" fill="#e8e0cf" opacity="0.43"/>
+<circle cx="169.1" cy="255.9" r="0.7" fill="#e8e0cf" opacity="0.33"/>
+<circle cx="1169.5" cy="550.5" r="1.2" fill="#e8e0cf" opacity="0.35"/>
+<circle cx="807.0" cy="475.7" r="1.2" fill="#e8e0cf" opacity="0.46"/>
+<circle cx="790.2" cy="346.8" r="0.7" fill="#e8e0cf" opacity="0.37"/>
+<circle cx="573.9" cy="76.0" r="0.7" fill="#e8e0cf" opacity="0.49"/>
+<circle cx="866.0" cy="73.1" r="0.7" fill="#e8e0cf" opacity="0.12"/>
+<circle cx="666.5" cy="130.5" r="0.9" fill="#e8e0cf" opacity="0.17"/>
+<circle cx="911.7" cy="630.7" r="0.5" fill="#e8e0cf" opacity="0.34"/>
+<circle cx="66.0" cy="284.5" r="0.9" fill="#e8e0cf" opacity="0.37"/>
+<circle cx="394.1" cy="182.3" r="1.2" fill="#e8e0cf" opacity="0.21"/>
+<circle cx="1192.6" cy="249.6" r="0.5" fill="#e8e0cf" opacity="0.36"/>
+<circle cx="1158.5" cy="387.7" r="1.2" fill="#e8e0cf" opacity="0.23"/>
+<circle cx="374.9" cy="742.9" r="0.5" fill="#e8e0cf" opacity="0.29"/>
+<circle cx="745.0" cy="445.1" r="0.5" fill="#e8e0cf" opacity="0.24"/>
+<circle cx="353.3" cy="107.9" r="0.7" fill="#e8e0cf" opacity="0.13"/>
+<circle cx="159.9" cy="234.2" r="0.5" fill="#e8e0cf" opacity="0.44"/>
+<circle cx="269.4" cy="476.8" r="0.9" fill="#e8e0cf" opacity="0.35"/>
+<circle cx="1034.0" cy="199.6" r="0.9" fill="#e8e0cf" opacity="0.45"/>
+<circle cx="304.7" cy="88.4" r="1.2" fill="#e8e0cf" opacity="0.52"/>
+<circle cx="1149.2" cy="523.2" r="0.7" fill="#e8e0cf" opacity="0.35"/>
+<circle cx="1039.6" cy="126.6" r="0.7" fill="#e8e0cf" opacity="0.25"/>
+<circle cx="234.8" cy="236.6" r="1.2" fill="#e8e0cf" opacity="0.15"/>
+<circle cx="89.6" cy="576.0" r="0.5" fill="#e8e0cf" opacity="0.30"/>
+<circle cx="994.1" cy="443.4" r="0.7" fill="#e8e0cf" opacity="0.26"/>
+<circle cx="505.4" cy="570.5" r="0.7" fill="#e8e0cf" opacity="0.47"/>
+<circle cx="347.5" cy="619.4" r="1.2" fill="#e8e0cf" opacity="0.43"/>
+<circle cx="817.1" cy="164.7" r="0.9" fill="#e8e0cf" opacity="0.14"/>
+<circle cx="543.5" cy="364.3" r="1.2" fill="#e8e0cf" opacity="0.14"/>
+<circle cx="442.1" cy="729.0" r="1.2" fill="#e8e0cf" opacity="0.39"/>
+<circle cx="833.4" cy="601.0" r="0.7" fill="#e8e0cf" opacity="0.34"/>
+<circle cx="693.7" cy="459.1" r="1.2" fill="#e8e0cf" opacity="0.49"/>
+<circle cx="248.7" cy="305.4" r="0.7" fill="#e8e0cf" opacity="0.16"/>
+<circle cx="297.5" cy="248.5" r="0.7" fill="#e8e0cf" opacity="0.46"/>
+<circle cx="699.0" cy="551.1" r="0.5" fill="#e8e0cf" opacity="0.54"/>
+<circle cx="16.1" cy="603.1" r="0.7" fill="#e8e0cf" opacity="0.39"/>
+<circle cx="938.2" cy="210.8" r="0.7" fill="#e8e0cf" opacity="0.24"/>
+<circle cx="897.7" cy="233.9" r="0.5" fill="#e8e0cf" opacity="0.42"/>
+<circle cx="396.0" cy="264.6" r="0.5" fill="#e8e0cf" opacity="0.20"/>
+<circle cx="468.0" cy="404.2" r="0.5" fill="#e8e0cf" opacity="0.36"/>
+<circle cx="897.7" cy="479.1" r="0.7" fill="#e8e0cf" opacity="0.48"/>
+<circle cx="0.7" cy="459.0" r="0.5" fill="#e8e0cf" opacity="0.19"/>
+<circle cx="222.7" cy="661.5" r="1.2" fill="#e8e0cf" opacity="0.21"/>
+<circle cx="535.5" cy="694.3" r="1.2" fill="#e8e0cf" opacity="0.45"/>
+<circle cx="335.3" cy="442.0" r="1.2" fill="#e8e0cf" opacity="0.54"/>
+<circle cx="559.0" cy="371.6" r="0.5" fill="#e8e0cf" opacity="0.22"/>
+<circle cx="983.9" cy="377.5" r="0.5" fill="#e8e0cf" opacity="0.23"/>
+<circle cx="248.1" cy="130.5" r="1.2" fill="#e8e0cf" opacity="0.14"/>
+<circle cx="1184.6" cy="481.4" r="0.5" fill="#e8e0cf" opacity="0.14"/>
+<circle cx="601.0" cy="457.4" r="0.5" fill="#e8e0cf" opacity="0.25"/>
+<circle cx="795.1" cy="10.8" r="0.5" fill="#e8e0cf" opacity="0.25"/>
+<circle cx="515.6" cy="360.7" r="0.9" fill="#e8e0cf" opacity="0.14"/>
+<circle cx="1175.5" cy="25.2" r="1.2" fill="#e8e0cf" opacity="0.36"/>
+<circle cx="819.0" cy="369.5" r="0.5" fill="#e8e0cf" opacity="0.48"/>
+<circle cx="520.4" cy="514.4" r="0.7" fill="#e8e0cf" opacity="0.42"/>
+<circle cx="592.4" cy="709.6" r="0.9" fill="#e8e0cf" opacity="0.27"/>
+<circle cx="266.4" cy="331.7" r="0.9" fill="#e8e0cf" opacity="0.43"/>
+<circle cx="898.4" cy="535.4" r="0.5" fill="#e8e0cf" opacity="0.28"/>
+<circle cx="313.4" cy="419.1" r="0.5" fill="#e8e0cf" opacity="0.39"/>
+<circle cx="512.7" cy="247.0" r="0.7" fill="#e8e0cf" opacity="0.16"/>
+<circle cx="888.1" cy="153.5" r="0.5" fill="#e8e0cf" opacity="0.32"/>
+<circle cx="693.4" cy="263.3" r="0.5" fill="#e8e0cf" opacity="0.51"/>
+<circle cx="1015.2" cy="195.5" r="0.5" fill="#e8e0cf" opacity="0.26"/>
+<circle cx="23.9" cy="580.6" r="0.9" fill="#e8e0cf" opacity="0.17"/>
+<circle cx="1063.2" cy="641.9" r="0.5" fill="#e8e0cf" opacity="0.29"/>
+<circle cx="551.7" cy="21.3" r="0.5" fill="#e8e0cf" opacity="0.47"/>
+<circle cx="73.9" cy="710.9" r="1.2" fill="#e8e0cf" opacity="0.21"/>
+<circle cx="516.7" cy="552.3" r="1.2" fill="#e8e0cf" opacity="0.17"/>
+<circle cx="388.9" cy="594.3" r="1.2" fill="#e8e0cf" opacity="0.37"/>
+<circle cx="817.8" cy="547.1" r="0.5" fill="#e8e0cf" opacity="0.19"/>
+<circle cx="228.5" cy="360.8" r="0.9" fill="#e8e0cf" opacity="0.53"/>
+<circle cx="809.1" cy="688.1" r="0.5" fill="#e8e0cf" opacity="0.44"/>
+<circle cx="1062.9" cy="698.8" r="1.2" fill="#e8e0cf" opacity="0.34"/>
+<circle cx="786.7" cy="457.2" r="1.2" fill="#e8e0cf" opacity="0.20"/>
+<circle cx="950.8" cy="210.0" r="0.5" fill="#e8e0cf" opacity="0.50"/>
+<circle cx="827.3" cy="161.9" r="0.9" fill="#e8e0cf" opacity="0.25"/>
+<circle cx="50.5" cy="147.1" r="0.5" fill="#e8e0cf" opacity="0.30"/>
+<circle cx="31.3" cy="271.2" r="0.5" fill="#e8e0cf" opacity="0.40"/>
+<circle cx="301.1" cy="334.5" r="1.2" fill="#e8e0cf" opacity="0.52"/>
+<circle cx="84.2" cy="165.2" r="0.7" fill="#e8e0cf" opacity="0.47"/>
+<circle cx="390.6" cy="425.7" r="1.2" fill="#e8e0cf" opacity="0.39"/>
+<circle cx="690.3" cy="166.8" r="0.7" fill="#e8e0cf" opacity="0.34"/>
+<circle cx="1159.5" cy="397.9" r="0.7" fill="#e8e0cf" opacity="0.30"/>
+<circle cx="702.1" cy="431.1" r="1.2" fill="#e8e0cf" opacity="0.18"/>
+<circle cx="404.5" cy="265.9" r="0.9" fill="#e8e0cf" opacity="0.43"/>
+<circle cx="692.7" cy="374.0" r="0.7" fill="#e8e0cf" opacity="0.52"/>
+<circle cx="758.0" cy="741.5" r="0.5" fill="#e8e0cf" opacity="0.21"/>
+<circle cx="283.1" cy="183.3" r="0.7" fill="#e8e0cf" opacity="0.47"/>
+<circle cx="493.4" cy="51.8" r="0.9" fill="#e8e0cf" opacity="0.28"/>
+<circle cx="1180.0" cy="415.9" r="0.5" fill="#e8e0cf" opacity="0.46"/>
+<circle cx="725.7" cy="721.0" r="0.9" fill="#e8e0cf" opacity="0.17"/>
+<circle cx="1164.7" cy="40.7" r="0.5" fill="#e8e0cf" opacity="0.36"/>
+<circle cx="709.5" cy="375.4" r="0.7" fill="#e8e0cf" opacity="0.31"/>
+<circle cx="158.5" cy="668.1" r="0.5" fill="#e8e0cf" opacity="0.51"/>
+<circle cx="808.7" cy="325.4" r="0.7" fill="#e8e0cf" opacity="0.22"/>
+<circle cx="265.5" cy="609.0" r="0.5" fill="#e8e0cf" opacity="0.48"/>
+<circle cx="934.3" cy="632.8" r="0.5" fill="#e8e0cf" opacity="0.14"/>
+<circle cx="281.8" cy="541.7" r="1.2" fill="#e8e0cf" opacity="0.50"/>
+<circle cx="218.4" cy="488.7" r="0.5" fill="#e8e0cf" opacity="0.52"/>
+<circle cx="86.7" cy="726.1" r="1.2" fill="#e8e0cf" opacity="0.54"/>
+<circle cx="373.6" cy="115.6" r="0.5" fill="#e8e0cf" opacity="0.22"/>
+<circle cx="574.0" cy="384.8" r="1.2" fill="#e8e0cf" opacity="0.28"/>
+<circle cx="692.0" cy="552.7" r="0.7" fill="#e8e0cf" opacity="0.52"/>
+<circle cx="1125.0" cy="74.2" r="0.9" fill="#e8e0cf" opacity="0.37"/>
+<circle cx="836.6" cy="716.7" r="1.2" fill="#e8e0cf" opacity="0.14"/>
+<circle cx="1106.4" cy="365.6" r="0.7" fill="#e8e0cf" opacity="0.12"/>
+<circle cx="1101.3" cy="227.6" r="0.9" fill="#e8e0cf" opacity="0.53"/>
+<circle cx="917.9" cy="71.5" r="0.9" fill="#e8e0cf" opacity="0.41"/>
+<circle cx="233.3" cy="32.1" r="0.5" fill="#e8e0cf" opacity="0.34"/>
+<circle cx="643.5" cy="58.2" r="0.5" fill="#e8e0cf" opacity="0.26"/>
+<circle cx="962.5" cy="728.1" r="1.2" fill="#e8e0cf" opacity="0.49"/>
+<circle cx="795.6" cy="382.3" r="0.5" fill="#e8e0cf" opacity="0.51"/>
+<circle cx="303.4" cy="86.3" r="0.9" fill="#e8e0cf" opacity="0.14"/>
+<circle cx="260.0" cy="75.1" r="0.5" fill="#e8e0cf" opacity="0.13"/>
+<circle cx="1042.3" cy="315.1" r="0.5" fill="#e8e0cf" opacity="0.43"/>
+<circle cx="661.9" cy="341.0" r="0.5" fill="#e8e0cf" opacity="0.47"/>
+<circle cx="1196.9" cy="341.2" r="0.9" fill="#e8e0cf" opacity="0.15"/>
+<circle cx="261.5" cy="191.7" r="0.7" fill="#e8e0cf" opacity="0.43"/>
+<circle cx="184.7" cy="734.8" r="0.7" fill="#e8e0cf" opacity="0.17"/>
+<circle cx="175.4" cy="171.2" r="0.9" fill="#e8e0cf" opacity="0.12"/>
+<g fill="none" stroke="#8d7448" stroke-width="1" opacity=".8">
+<path d="M28 54V28H54"/><path d="M1146 28H1172V54"/>
+<path d="M28 706V732H54"/><path d="M1146 732H1172V706"/>
+</g>
+<text x="56" y="54" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei','Segoe UI',sans-serif" font-size="11" fill="#d9b779" letter-spacing="3.2" font-weight="400" text-anchor="start">PLATE 05  /  THE ARCHIPELAGO</text>
+<text x="56" y="94" font-family="'Noto Serif SC','Songti SC','STSong','SimSun',Georgia,serif" font-size="28" fill="#e8e0cf" font-weight="400" text-anchor="start" opacity="1">群岛与未知海域</text>
+<text x="56" y="118" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei','Segoe UI',sans-serif" font-size="10" fill="#8d96a9" letter-spacing="2.2" font-weight="400" text-anchor="start">LOCAL  ·  GLOBAL  ·  FUNCTION FIELD  ·  GEOMETRIC</text>
+<path d="M40 190Q79 197 109 191Q136 182 166 188Q231 199 261 186Q292 194 322 193Q389 197 419 187Q450 195 480 186Q536 190 566 188Q621 192 651 192Q671 183 701 189Q714 181 744 188Q786 196 816 187Q875 200 905 192Q965 201 995 187Q1063 187 1093 189Q1146 185 1176 192" fill="none" stroke="#7b9fbf" stroke-opacity=".075"/>
+<path d="M40 248Q106 238 136 248Q204 242 234 250Q261 246 291 244Q313 258 343 244Q409 249 439 244Q506 248 536 251Q554 236 584 247Q621 259 651 245Q699 236 729 245Q787 254 817 247Q884 242 914 249Q924 238 954 246Q998 236 1028 252Q1043 254 1073 251Q1117 242 1147 250Q1161 248 1191 247" fill="none" stroke="#7b9fbf" stroke-opacity=".075"/>
+<path d="M40 306Q90 318 120 303Q174 312 204 304Q225 313 255 302Q268 302 298 310Q351 313 381 304Q438 302 468 302Q485 316 515 308Q585 301 615 304Q664 310 694 302Q751 305 781 310Q828 312 858 303Q923 305 953 303Q1018 312 1048 307Q1086 300 1116 308Q1138 312 1168 302" fill="none" stroke="#7b9fbf" stroke-opacity=".075"/>
+<path d="M40 364Q74 371 104 365Q114 365 144 361Q167 359 197 367Q224 362 254 361Q283 372 313 364Q329 368 359 360Q370 364 400 368Q461 365 491 367Q523 374 553 363Q599 375 629 361Q666 372 696 363Q712 376 742 366Q784 363 814 368Q847 356 877 364Q897 374 927 364Q938 353 968 362Q994 357 1024 361Q1072 356 1102 360Q1115 353 1145 367Q1168 364 1198 364" fill="none" stroke="#7b9fbf" stroke-opacity=".075"/>
+<path d="M40 422Q89 410 119 423Q147 414 177 425Q222 418 252 420Q267 433 297 426Q325 432 355 419Q369 423 399 425Q418 432 448 426Q506 422 536 420Q588 432 618 422Q677 429 707 425Q739 413 769 418Q796 426 826 420Q847 430 877 419Q897 434 927 421Q991 410 1021 421Q1042 425 1072 425Q1119 427 1149 426Q1183 412 1213 420" fill="none" stroke="#7b9fbf" stroke-opacity=".075"/>
+<path d="M40 480Q85 483 115 480Q159 470 189 476Q236 486 266 482Q310 477 340 484Q383 485 413 477Q479 488 509 484Q538 470 568 479Q624 472 654 477Q670 490 700 483Q739 469 769 483Q835 488 865 476Q918 487 948 476Q981 475 1011 483Q1035 479 1065 483Q1131 475 1161 476" fill="none" stroke="#7b9fbf" stroke-opacity=".075"/>
+<path d="M40 538Q89 545 119 535Q168 527 198 540Q234 544 264 535Q279 532 309 534Q357 550 387 536Q402 528 432 534Q464 545 494 541Q539 543 569 541Q580 548 610 535Q641 528 671 539Q681 540 711 541Q758 530 788 540Q828 530 858 535Q925 537 955 537Q993 550 1023 536Q1045 533 1075 535Q1092 527 1122 535Q1136 546 1166 535" fill="none" stroke="#7b9fbf" stroke-opacity=".075"/>
+<path d="M40 596Q73 587 103 592Q142 604 172 600Q194 595 224 593Q249 584 279 596Q337 600 367 595Q377 598 407 596Q477 603 507 592Q523 600 553 598Q566 592 596 599Q660 594 690 595Q740 585 770 596Q788 593 818 592Q879 589 909 597Q969 596 999 592Q1065 593 1095 593Q1106 594 1136 599Q1161 597 1191 597" fill="none" stroke="#7b9fbf" stroke-opacity=".075"/>
+<path d="M40 654Q81 660 111 655Q177 654 207 656Q230 644 260 654Q289 656 319 657Q368 660 398 657Q436 654 466 652Q497 654 527 650Q557 644 587 652Q617 659 647 650Q669 648 699 655Q751 646 781 651Q812 656 842 656Q865 664 895 658Q954 652 984 651Q995 663 1025 658Q1061 657 1091 653Q1156 665 1186 655" fill="none" stroke="#7b9fbf" stroke-opacity=".075"/>
+<path d="M311.0 310.0L309.1 328.8L296.0 348.2L269.6 367.2L221.8 368.7L183.6 354.2L151.6 349.8L103.0 348.6L72.3 332.1L75.0 310.0L87.3 290.5L115.2 276.2L151.6 270.2L180.8 258.4L224.6 243.9L269.6 252.8L283.8 276.6L294.1 293.7Z" fill="#d9b779" fill-opacity=".07" stroke="#d9b779" stroke-opacity=".45"/>
+<text x="200" y="308" text-anchor="middle" font-family="'Noto Serif SC','Songti SC','STSong','SimSun',Georgia,serif" font-size="20" fill="#e8e0cf">局部域</text>
+<text x="200" y="332" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei','Segoe UI',sans-serif" font-size="9" fill="#d9b779" letter-spacing="1.4">K_v / p-adic</text>
+<path d="M652.8 260.0L618.0 281.5L597.8 301.0L584.7 333.4L532.2 351.4L473.0 336.6L432.7 318.3L393.4 304.7L367.3 284.1L348.8 260.0L332.3 229.5L364.9 203.3L432.7 201.7L479.4 201.7L525.8 186.9L584.7 186.6L626.3 207.0L653.0 232.2Z" fill="#78e4dc" fill-opacity=".07" stroke="#78e4dc" stroke-opacity=".45"/>
+<text x="500" y="258" text-anchor="middle" font-family="'Noto Serif SC','Songti SC','STSong','SimSun',Georgia,serif" font-size="20" fill="#e8e0cf">全局数域</text>
+<text x="500" y="282" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei','Segoe UI',sans-serif" font-size="9" fill="#78e4dc" letter-spacing="1.4">K / Q</text>
+<path d="M1095.7 300.0L1051.8 323.9L989.0 335.5L953.4 350.3L905.6 364.4L843.2 366.8L775.4 364.0L718.8 348.6L720.3 320.9L739.7 300.0L717.2 278.7L716.3 250.6L775.4 236.0L843.8 234.4L905.1 236.8L953.4 249.7L991.5 263.8L1054.8 275.7Z" fill="#a595ff" fill-opacity=".07" stroke="#a595ff" stroke-opacity=".45"/>
+<text x="875" y="298" text-anchor="middle" font-family="'Noto Serif SC','Songti SC','STSong','SimSun',Georgia,serif" font-size="20" fill="#e8e0cf">函数域</text>
+<text x="875" y="322" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei','Segoe UI',sans-serif" font-size="9" fill="#a595ff" letter-spacing="1.4">F_q(C)</text>
+<path d="M1098.3 545.0L1061.6 566.3L1004.7 576.8L970.4 589.2L927.0 600.5L872.0 602.7L810.4 601.2L757.3 588.4L758.2 563.7L778.3 545.0L760.9 526.7L759.6 502.3L810.4 488.8L871.4 486.3L927.5 488.4L970.4 500.8L1002.4 513.8L1058.9 524.0Z" fill="#f28fbe" fill-opacity=".07" stroke="#f28fbe" stroke-opacity=".45"/>
+<text x="900" y="543" text-anchor="middle" font-family="'Noto Serif SC','Songti SC','STSong','SimSun',Georgia,serif" font-size="20" fill="#e8e0cf">几何朗兰兹</text>
+<text x="900" y="567" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei','Segoe UI',sans-serif" font-size="9" fill="#f28fbe" letter-spacing="1.4">Bun_G / D-mod</text>
+<path d="M646.8 560.0L613.4 578.1L593.9 594.5L581.4 621.8L531.0 637.0L474.0 624.5L435.4 609.1L397.6 597.7L372.6 580.3L354.8 560.0L339.0 534.3L370.2 512.3L435.4 510.9L480.3 510.9L524.8 498.5L581.4 498.2L621.3 515.4L647.0 536.6Z" fill="#d9b779" fill-opacity=".07" stroke="#d9b779" stroke-opacity=".45"/>
+<text x="500" y="558" text-anchor="middle" font-family="'Noto Serif SC','Songti SC','STSong','SimSun',Georgia,serif" font-size="20" fill="#e8e0cf">Arthur 迹公式</text>
+<text x="500" y="582" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei','Segoe UI',sans-serif" font-size="9" fill="#d9b779" letter-spacing="1.4">spectral / orbital</text>
+<path d="M344.0 570.0L301.3 587.5L267.3 598.6L253.9 619.5L213.3 636.5L158.3 632.6L113.9 621.0L80.7 606.3L72.4 587.0L64.0 570.0L38.2 547.9L52.8 524.0L113.9 519.0L164.7 522.2L207.0 518.4L253.9 520.5L295.1 531.7L335.5 547.3Z" fill="#78e4dc" fill-opacity=".07" stroke="#78e4dc" stroke-opacity=".45"/>
+<text x="185" y="568" text-anchor="middle" font-family="'Noto Serif SC','Songti SC','STSong','SimSun',Georgia,serif" font-size="20" fill="#e8e0cf">局部对应</text>
+<text x="185" y="592" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei','Segoe UI',sans-serif" font-size="9" fill="#78e4dc" letter-spacing="1.4">WD_K → L G</text>
+<path d="M260 340Q345.0 272.0 430 280" fill="none" stroke="#d9b779" stroke-opacity=".4" stroke-dasharray="3 7"/>
+<text x="345.0" y="264.0" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei','Segoe UI',sans-serif" font-size="9" fill="#d9b779" opacity=".8" letter-spacing="1">局部→整体</text>
+<path d="M600 300Q700.0 267.0 800 310" fill="none" stroke="#d9b779" stroke-opacity=".4" stroke-dasharray="3 7"/>
+<text x="700.0" y="259.0" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei','Segoe UI',sans-serif" font-size="9" fill="#d9b779" opacity=".8" letter-spacing="1">数域 ⇢ 函数域</text>
+<path d="M880 335Q890.0 384.5 900 510" fill="none" stroke="#d9b779" stroke-opacity=".4" stroke-dasharray="3 7"/>
+<text x="890.0" y="376.5" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei','Segoe UI',sans-serif" font-size="9" fill="#d9b779" opacity=".8" letter-spacing="1">几何化</text>
+<path d="M525 525Q412.5 504.5 300 560" fill="none" stroke="#d9b779" stroke-opacity=".4" stroke-dasharray="3 7"/>
+<text x="412.5" y="496.5" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei','Segoe UI',sans-serif" font-size="9" fill="#d9b779" opacity=".8" letter-spacing="1">局部展开</text>
+<path d="M850 555Q735.0 519.5 620 560" fill="none" stroke="#d9b779" stroke-opacity=".4" stroke-dasharray="3 7"/>
+<text x="735.0" y="511.5" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei','Segoe UI',sans-serif" font-size="9" fill="#d9b779" opacity=".8" letter-spacing="1">几何 ↔ 算术</text>
+<rect x="700" y="620" width="400" height="72" fill="url(#hatch)" stroke="#f28fbe" stroke-opacity=".25"/>
+<text x="900" y="652" text-anchor="middle" font-family="'Noto Serif SC','Songti SC','STSong','SimSun',Georgia,serif" font-size="15" fill="#f28fbe">未知海域：一般约化群的整体函子性</text>
+<text x="900" y="674" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei','Segoe UI',sans-serif" font-size="9" fill="#8d96a9" letter-spacing="1.4">TERRA INCOGNITA</text>
+<g transform="translate(1060 190)" stroke="#d9b779" stroke-opacity=".55" fill="none">
+<circle r="42"/><circle r="30" stroke-opacity=".25"/><path d="M0 -38V38M-38 0H38" stroke-opacity=".2"/>
+<path d="M0 -32L7 -4L0 0L-7 -4Z" fill="#d9b779" fill-opacity=".4"/><text y="-48" text-anchor="middle" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei','Segoe UI',sans-serif" font-size="9" fill="#d9b779" stroke="none" letter-spacing="2">N</text>
+</g>
+<text x="56" y="728" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei','Segoe UI',sans-serif" font-size="9" fill="#8d96a9" letter-spacing="1.2" font-weight="400" text-anchor="start">地图为概念示意：区域、距离与面积不表示数学上的包含关系。</text>
+</svg>
